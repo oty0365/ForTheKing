@@ -1132,8 +1132,8 @@ MonoBehaviour:
       \uC4F0\uB358 \uB9E4\uC6B0 \uC57D\uD55C \uAC80 \uB300\uC790\uC5F0\uC758 \uD798\uC774
       \uAE43\uB4E4\uC5B4 \uC788\uB2E4."
     weponimage: {fileID: 21300000, guid: 58990c5a723361543a14a457af1678f6, type: 3}
-    prefab: {fileID: 0}
-    value: 0
+    prefab: {fileID: 7504930389099465077, guid: 91fbd543f9924a14c8174d4f75b0d1fe, type: 3}
+    value: 50
   - weponname: "\uAE30\uC0AC\uC758 \uAC80"
     wepondamage: 5
     weponnumber: 2
@@ -1141,17 +1141,17 @@ MonoBehaviour:
     wepondiscription: "\uAE30\uC0AC \uC2E0\uC785\uC5D0\uAC8C \uC8FC\uC5B4\uC9C0\uB294
       \uAC80 \n\uB2E8\uB2E8\uD558\uB098 \uB0A0\uC774 \uC608\uB9AC\uD558\uC9C0 \uBABB\uD558\uB2E4."
     weponimage: {fileID: 21300000, guid: 2ebfe6e3a4e1e654ca77349471d7120b, type: 3}
-    prefab: {fileID: 0}
-    value: 0
+    prefab: {fileID: 5451422551215786851, guid: 83cb6dc8d1222f246849263d2d2e3e98, type: 3}
+    value: 100
   - weponname: "\uD669\uAE08\uAC80"
     wepondamage: 4
     weponnumber: 3
-    weponrarity: 0
+    weponrarity: 1
     wepondiscription: "\uC7A5\uC2DD\uC6A9\uC73C\uB85C \uC4F0\uC774\uB358 \uC591\uB0A0\uAC80
       \n\uB0B4\uAD6C\uC131\uC774 \uC54A\uC88B\uB2E4."
     weponimage: {fileID: 21300000, guid: 5e03f17547fdf3c4a94c63b05f6ac432, type: 3}
-    prefab: {fileID: 0}
-    value: 0
+    prefab: {fileID: 3453257957176771969, guid: b63144a038e907c4cbba5c2582e1a3c2, type: 3}
+    value: 1000
   - weponname: "\uCE74\uD0C0\uB098"
     wepondamage: 6
     weponnumber: 4
@@ -1159,8 +1159,8 @@ MonoBehaviour:
     wepondiscription: "\uBC97\uAF43\uC758 \uB098\uB77C\uC5D0\uC11C \uC218\uC785\uB41C
       \uAE30\uB2E4\uB780 \uAC80"
     weponimage: {fileID: 21300000, guid: d22b3e605bf77a1449383178846c1004, type: 3}
-    prefab: {fileID: 0}
-    value: 0
+    prefab: {fileID: 4721620391684098168, guid: c30454ecbbcc2984298e401f2a5b221a, type: 3}
+    value: 150
   - weponname: "\uADF8\uB808\uC774\uD2B8 \uC18C\uB4DC"
     wepondamage: 12
     weponnumber: 5
@@ -1168,17 +1168,17 @@ MonoBehaviour:
     wepondiscription: "\uCD08\uB300 \uC6A9\uC0AC\uAC00\uC4F0\uB358 \uD2B9\uB300\uAC80\uC744
       \uBCF8 \uB72C \uAC80 "
     weponimage: {fileID: 21300000, guid: 361087fe68602be44816af86cf8ea936, type: 3}
-    prefab: {fileID: 0}
-    value: 0
+    prefab: {fileID: 8938843400180634507, guid: 0d8ff84ab8eb6d546950e55b7b373f21, type: 3}
+    value: 300
   - weponname: "\uBC40\uD30C\uC774\uC5B4\uC758 \uC774\uBE68"
     wepondamage: 11
     weponnumber: 6
-    weponrarity: 0
+    weponrarity: 1
     wepondiscription: "\uD608\uB9C8\uBC95\uC774 \uAE43\uB4E0 \uAC80 \n\uACE0\uB300\uC5D0
       \uBC40\uD30C\uC774\uC5B4\uB4E4\uC774 \uB9CC\uB4E0 \uB4EF \uD558\uB2E4."
     weponimage: {fileID: 21300000, guid: f4bbb3cfbbffa634098b1690761a69c6, type: 3}
-    prefab: {fileID: 0}
-    value: 0
+    prefab: {fileID: 1417505462842149220, guid: 6ff68c9596106bd4f8c53d2e608d9577, type: 3}
+    value: 800
   - weponname: "\uC57C\uC804\uC0BD"
     wepondamage: 4
     weponnumber: 7
@@ -1186,45 +1186,45 @@ MonoBehaviour:
     wepondiscription: "\uAC70\uB300\uD55C \uAD70\uC6A9 \uC0BD\uC774\uB2E4. \n\uB9DE\uC73C\uBA74
       \uBA38\uB9AC\uAC00 \uAE68\uC9C8 \uB4EF \uC544\uD30C\uC9C4\uB2E4."
     weponimage: {fileID: 21300000, guid: 21ddfdef6500fde4d8e42b9fe10d54aa, type: 3}
-    prefab: {fileID: 0}
-    value: 0
-  - weponname: "\uD615\uAD11\uC778\uC794\uC758 \uCE74\uD0C0\uB098"
+    prefab: {fileID: 515149670715843899, guid: 75465da77c9e7f34cbd7d411cdfb781f, type: 3}
+    value: 50
+  - weponname: "\uD615\uAD11\uC778\uC7A5\uC758 \uCE74\uD0C0\uB098"
     wepondamage: 7
     weponnumber: 8
-    weponrarity: 0
+    weponrarity: 1
     wepondiscription: "\uD615\uAD11\uC0C9 \uC778\uC7A5\uC774 \uC138\uACA8\uC9C4 \uCE74\uD0C0\uB098
       \n\uC5B4\uB290 \uC720\uBA85\uD55C \uC0AC\uBB34\uB77C\uC774\uAC00 \uB9CC\uB4E0
       \uB4EF \uD558\uB2E4."
     weponimage: {fileID: 21300000, guid: b8dddf879076b6b44b8c1175b248a2d7, type: 3}
-    prefab: {fileID: 0}
-    value: 0
-  - weponname: "\uB2AA\uC9C0\uC758\uCE7C\uB0A0\uAC80"
+    prefab: {fileID: 947149605446610262, guid: e1fe4faba941c5148a50261a88177166, type: 3}
+    value: 700
+  - weponname: "\uB179\uC0AC\uB9C8\uADC0\uBC1C\uD1B1"
     wepondamage: 3
     weponnumber: 9
-    weponrarity: 0
+    weponrarity: 2
     wepondiscription: "\uBC40\uC758 \uB3C5\uAE30\uB97C \uD55C\uAECF \uBAA8\uC740
       \uCE7C\uB0A0\uAC80 \n\uC0C1\uB300\uC5D0\uAC8C \uB9F9\uB3C5\uC744 \uBD80\uC5EC\uD55C\uB2E4."
     weponimage: {fileID: 21300000, guid: 01755d5689d012148a856be44bd42f6b, type: 3}
     prefab: {fileID: 0}
-    value: 0
+    value: 1300
   - weponname: "\uC0C1\uC5B4\uC758 \uC774\uBE68"
     wepondamage: 15
     weponnumber: 10
-    weponrarity: 0
+    weponrarity: 2
     wepondiscription: "\uBA54\uAC08\uB85C\uB3C8\uC758 \uC774\uBE68\uB85C \uB9CC\uB4E0
       \uB450\uAEBC\uC6B4 \uCC3D\uC774\uB2E4."
     weponimage: {fileID: 21300000, guid: 18f8d265454067e45b3c0bbb8abaecea, type: 3}
-    prefab: {fileID: 0}
-    value: 0
+    prefab: {fileID: 2918670082432086775, guid: e90427e4ff4891b47b4d3319d25c7173, type: 3}
+    value: 1400
   - weponname: "\uBD88\uB7C9\uBC30\uC758 \uAC2C\uBE57"
     wepondamage: 8
     weponnumber: 11
-    weponrarity: 0
+    weponrarity: 1
     wepondiscription: "\uBD88\uB7C9\uBC30\uB4E4\uC774 \uD754\uD788 \uC0AC\uC6A9\uD558\uB294
       \uACE1\uAC80\uC774\uB2E4."
     weponimage: {fileID: 21300000, guid: ce291c1711446204c99e733b2ca7ec41, type: 3}
-    prefab: {fileID: 0}
-    value: 0
+    prefab: {fileID: 3556685777369030238, guid: d299f74df5a9b824bb1ca03c40bf1124, type: 3}
+    value: 400
   - weponname: "\uB2E8\uB3C4"
     wepondamage: 3
     weponnumber: 12
@@ -1232,59 +1232,70 @@ MonoBehaviour:
     wepondiscription: "\uACAC\uC2B5 \uC548\uBD80\uC0DD\uB4E4\uC774 \uD6C8\uB828 \uCCAB\uB0A0\uC5D0
       \uBC1B\uB294 \uB2E8\uAC80"
     weponimage: {fileID: 21300000, guid: ac4532d51abdb1943829ba56dea569bb, type: 3}
-    prefab: {fileID: 0}
-    value: 0
+    prefab: {fileID: 804100504833592630, guid: 713921e49cd342f4892e725b23e6e8b3, type: 3}
+    value: 50
   - weponname: "\uACF5\uD5C8\uC758 \uB300\uAC80"
     wepondamage: 28
     weponnumber: 13
-    weponrarity: 0
+    weponrarity: 4
     wepondiscription: "\uB9C8\uC74C\uC774 \uAEBE\uC778 \uAE30\uC0AC\uC758 \uB300\uAC80
       \n\uD55C\uB54C\uB294 \uBC1D\uAC8C \uBE5B\uB0AC\uC73C\uB098 \uD604\uC7AC\uB294
       \n\uACF5\uD5C8\uC5D0 \uC7A0\uC2DD\uB418\uC5C8\uB2E4."
     weponimage: {fileID: 21300000, guid: bf1e21f880184934bad792786cac5a8e, type: 3}
-    prefab: {fileID: 0}
-    value: 0
-  - weponname: 
-    wepondamage: 0
+    prefab: {fileID: 1207403303978286488, guid: 5756dd3261ed484438b6d508bd10e07e, type: 3}
+    value: 4000
+  - weponname: "\uC2DC\uC0B0\uD608\uD558"
+    wepondamage: 17
+    weponnumber: 0
+    weponrarity: 3
+    wepondiscription: "\uC545\uBA85\uB192\uC740 \uC0AC\uBB34\uB77C\uC774\uAC00 \uC8FD\uAE30\uC804\uC5D0
+      \uB0A8\uAE34 \uAC80\n\uCE7C\uB0A0\uC774 \uC544\uBB34\uB9AC \uBD80\uB824\uC838\uB3C4
+      \uD53C\uB97C \uD761\uC218\uD558\uBA74\n\uC6D0\uD615\uC73C\uB85C \uB3CC\uC544\uAC00\uB294
+      \uD2B9\uC131\uC774 \uC788\uB2E4."
+    weponimage: {fileID: 21300000, guid: f94076edd53b8ae4ba6d4d110435f83f, type: 3}
+    prefab: {fileID: 765084563307470189, guid: ad82e1afd4ad4eb4584cae14c81da78e, type: 3}
+    value: 2300
+  - weponname: "\uB2E4\uC774\uC544\uAC80"
+    wepondamage: 14
+    weponnumber: 0
+    weponrarity: 2
+    wepondiscription: "\uD55C \uAD11\uBD80\uAC00 \uC790\uC2E0\uC758 \uC778\uC0DD\uC744
+      \uBC14\uCCD0 \uB9CC\uB4E0 \uAC80\n\uB9E4\uC6B0 \uACAC\uACE0\uD558\uACE0 \uAC12\uC774
+      \uBE44\uC2F8 \uACBD\uB9E4\uC5D0\uB3C4\n\uC62C\uB77C\uC624\uAE30 \uC27D\uC9C0
+      \uC54A\uB2E4."
+    weponimage: {fileID: 21300000, guid: 321d417839f6fa04dacfbdab735e4f72, type: 3}
+    prefab: {fileID: 4631800443139715539, guid: 2303d1ff8850f03408ae13514479c587, type: 3}
+    value: 3500
+  - weponname: "\uB9AC\uD2C0\uBCF8\uC758\uBF08"
+    wepondamage: 20
+    weponnumber: 0
+    weponrarity: 2
+    wepondiscription: "'\uC6A9\uC0AC\uD559\uC0B4\uC790'\uC758 \uC774\uBA85\uC744
+      \uAC00\uC9C4\n\uC2A4\uCF08\uB808\uD1A4\uC758 \uBF08 \uC804\uC0AC\uD615 \uC801\uC5D0\uAC8C\n\uAC00\uD558\uB294
+      \uB370\uBBF8\uC9C0\uAC00 \uC99D\uAC00\uD55C\uB2E4."
+    weponimage: {fileID: 21300000, guid: 7764c2880cafef341b7456ee2de75dea, type: 3}
+    prefab: {fileID: 3670099437672136820, guid: ea35b3331df84b04488d604e385b4ebe, type: 3}
+    value: 2000
+  - weponname: "\uC6B0\uC0C1"
+    wepondamage: 1
     weponnumber: 0
     weponrarity: 0
-    wepondiscription: 
-    weponimage: {fileID: 0}
-    prefab: {fileID: 0}
-    value: 0
-  - weponname: 
-    wepondamage: 0
+    wepondiscription: "\uD608\uB9C8\uBC95 \uC2E0\uB3C4\uB4E4\uC774 \uC138\uB808\uB97C
+      \uBC1B\uC744\uB54C\n\uBC1B\uB294 \uD0C8\uB9AC\uC2A4\uB9CC \uC8FC\uB85C \uC18C\uD658\uB9C8\uBC95\uC744\n\uC0AC\uC6A9\uD560
+      \uB54C \uB3C4\uC6C0\uC744 \uC900\uB2E4."
+    weponimage: {fileID: 21300000, guid: dff799ffd8a85d8479497040e49e2d7e, type: 3}
+    prefab: {fileID: 4429334960176517079, guid: 141f67ad775d7754f990c81d57e1557a, type: 3}
+    value: 100
+  - weponname: "\uC0BC\uC9C0\uCC3D"
+    wepondamage: 7
     weponnumber: 0
-    weponrarity: 0
-    wepondiscription: 
-    weponimage: {fileID: 0}
-    prefab: {fileID: 0}
-    value: 0
-  - weponname: 
-    wepondamage: 0
-    weponnumber: 0
-    weponrarity: 0
-    wepondiscription: 
-    weponimage: {fileID: 0}
-    prefab: {fileID: 0}
-    value: 0
-  - weponname: 
-    wepondamage: 0
-    weponnumber: 0
-    weponrarity: 0
-    wepondiscription: 
-    weponimage: {fileID: 0}
-    prefab: {fileID: 0}
-    value: 0
-  - weponname: 
-    wepondamage: 0
-    weponnumber: 0
-    weponrarity: 0
-    wepondiscription: 
-    weponimage: {fileID: 0}
-    prefab: {fileID: 0}
-    value: 0
-  toggled: 000000000000000000000000000000000000
+    weponrarity: 1
+    wepondiscription: "\uBC14\uB2E4\uC758 \uC8FC\uBBFC\uB4E4\uC774 \uC8FC\uB85C \uC4F0\uB294
+      \uBB34\uAE30 "
+    weponimage: {fileID: 21300000, guid: 61a6c3af54b598c4aa3811de7c1e7053, type: 3}
+    prefab: {fileID: 6524025047120978263, guid: 603f0b1c5d1986e40beaada2bd71fd22, type: 3}
+    value: 250
+  toggled: 010101010101010101010101010101010101
 --- !u!4 &157542879
 Transform:
   m_ObjectHideFlags: 0
@@ -1747,7 +1758,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &403310881
 RectTransform:
   m_ObjectHideFlags: 0
