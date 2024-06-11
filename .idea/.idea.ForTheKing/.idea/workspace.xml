@@ -8,34 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/goblin.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/goblin.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/goblinidle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/goblinidle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LootChest/Chapter1/WoodenChest/CommonboxOpen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LootChest/Chapter1/WoodenChest/CommonboxOpen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerInteraction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Banditsgambit/Bandit'sgambit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Banditsgambit/Bandit'sgambit.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Bloodkatana/Bloodkatana.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Bloodkatana/Bloodkatana.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Bloodkatana/sprite_12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Bloodkatana/sprite_12.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Diasword/Diasword.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Diasword/Diasword.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Diasword/sprite_13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Diasword/sprite_13.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Goldensword/Goldensword.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Goldensword/Goldensword.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Greatsword/Greatsword.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Greatsword/Greatsword.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Katana/Katana.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Katana/Katana.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Katana/sprite_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Katana/sprite_02.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/NightsSword/knightssword.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/NightsSword/knightssword.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Sealedkatana/Sealdkatana.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Sealedkatana/Sealdkatana.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Sharktooth/Sharktooth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Sharktooth/Sharktooth.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Skullsbone/Skullsbone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Skullsbone/Skullsbone.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Swampknighf/Swampkinfe.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Swampknighf/Swampkinfe.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Trident/Trident.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Trident/Trident.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Vampiretooth.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Vampiretooth/Vampiretooth.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Vampiretooth/Vampiretooth.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Vampiretooth/Vampiretooth.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Vampiretooth/Vampiretooth.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Vampiretooth/sprite_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Vampiretooth/sprite_4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/VoidSword/Voidsword.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/VoidSword/Voidsword.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/WeaponArray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/WeaponArray.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718028819916</updated>
       <workItem from="1718028821020" duration="1013000" />
-      <workItem from="1718079028910" duration="1585000" />
+      <workItem from="1718079028910" duration="2181000" />
     </task>
     <servers />
   </component>
