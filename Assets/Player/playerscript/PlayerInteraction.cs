@@ -50,6 +50,9 @@ public class PlayerInteraction : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D playercolider)
     {
-        isinteractingwithbox = false;
+        if (playercolider.gameObject.CompareTag("lootchest"))
+        {
+            isinteractingwithbox = false;
+        }
     }
 }

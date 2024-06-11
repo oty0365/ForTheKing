@@ -10,8 +10,8 @@ using Random = UnityEngine.Random;
 public class WeaponArray : MonoBehaviour
 {
     public int CurrentWeponIndex;
-    public GameObject weaponsolt1;
-
+    [FormerlySerializedAs("weaponsolt1")] public GameObject weaponSolt1;
+    [SerializeField] private GameObject WeaponSelectManagementSystem;
     private int _size;
 
     void Start()
@@ -37,7 +37,8 @@ public class WeaponArray : MonoBehaviour
     
     public void EquipWeapon()
     {
-        GameObject temp = Instantiate(WeaponData.Instance.GetWeaponData(CurrentWeponIndex).prefab, weaponsolt1.transform.position, Quaternion.identity, weaponsolt1.transform);
+        GameObject temp = Instantiate(WeaponData.Instance.GetWeaponData(CurrentWeponIndex).prefab, weaponSolt1.transform.position, Quaternion.identity, weaponSolt1.transform);
         temp.transform.localRotation = _quaternion;
+        WeaponSelectManagementSystem.SetActive(false);
     }
 }
