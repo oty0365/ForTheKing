@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c22a3450-7e3c-4862-90f3-fd4bbfd4a997" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/goblin.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/goblin.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/goblinidle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/goblinidle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerMove.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/WeaponArray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/WeaponArray.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +17,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Enemies/goblin/goblinAI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -94,6 +97,8 @@
       <updated>1718028819916</updated>
       <workItem from="1718028821020" duration="1013000" />
       <workItem from="1718079028910" duration="2181000" />
+      <workItem from="1718147665298" duration="1119000" />
+      <workItem from="1718179335115" duration="1905000" />
     </task>
     <servers />
   </component>

@@ -19,7 +19,7 @@ public class WeaponArray : MonoBehaviour
         _size = Enum.GetValues(typeof(WeaponType)).Length;
         CurrentWeponIndex = Random.Range(0, _size);
     }
-    
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
@@ -30,15 +30,22 @@ public class WeaponArray : MonoBehaviour
 
     public void RandomWepon()
     {
-        CurrentWeponIndex = Random.Range(0,_size);
+        CurrentWeponIndex = Random.Range(0, _size);
     }
 
     private readonly Quaternion _quaternion = Quaternion.Euler(0, 0, 90);
-    
+
     public void EquipWeapon()
     {
-        GameObject temp = Instantiate(WeaponData.Instance.GetWeaponData(CurrentWeponIndex).prefab, weaponSolt1.transform.position, Quaternion.identity, weaponSolt1.transform);
+        GameObject temp = Instantiate(WeaponData.Instance.GetWeaponData(CurrentWeponIndex).prefab,
+            weaponSolt1.transform.position, Quaternion.identity, weaponSolt1.transform);
         temp.transform.localRotation = _quaternion;
+        WeaponSelectManagementSystem.SetActive(false);
+    }
+
+    public void ExchangeWeapon()
+    {
+        Playerstatus.Gold += WeaponData.Instance.GetWeaponData(CurrentWeponIndex).value;
         WeaponSelectManagementSystem.SetActive(false);
     }
 }
