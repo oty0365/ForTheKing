@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using TMPro;
 using UnityEngine;
 
@@ -21,6 +22,6 @@ public class GoldSystem : MonoBehaviour
 
     public void GoldUpdate()
     {
-        moneyGui.text = Playerstatus.Gold.ToString();
+        moneyGui.text = Playerstatus.Gold.ToString(CultureInfo.InvariantCulture);
     }
 }

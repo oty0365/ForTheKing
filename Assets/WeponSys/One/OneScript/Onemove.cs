@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Player.playerscript;
 using UnityEngine;
 
 public class Onemove : MonoBehaviour

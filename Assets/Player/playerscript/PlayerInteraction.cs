@@ -28,16 +28,11 @@ public class PlayerInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isinteractingwithbox)
-        {
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                _weaponArray1.RandomWepon();
-                _weaponArray2.RandomWepon();
-                _weaponArray3.RandomWepon();
-               gatcha.SetActive(true);
-            }
-        }
+        if (!isinteractingwithbox || !Input.GetKeyDown(KeyCode.F)) return;
+        _weaponArray1.RandomWepon();
+        _weaponArray2.RandomWepon();
+        _weaponArray3.RandomWepon();
+        gatcha.SetActive(true);
     }
 
     private void OnTriggerEnter2D(Collider2D playercolider)

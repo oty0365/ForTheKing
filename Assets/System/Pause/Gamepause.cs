@@ -1,27 +1,26 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-
-public class Gamepause : MonoBehaviour
+namespace System.Pause
 {
-    [NonSerialized]public bool ispaused;
-
-    [SerializeField] private GameObject isselecting;
-    // Start is called before the first frame update
-    void Start()
+    public class Gamepause : MonoBehaviour
     {
-        ispaused = false;
-    }
+        [NonSerialized]public bool ispaused;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        [SerializeField] private GameObject isselecting;
+        // Start is called before the first frame update
+        void Start()
         {
-            ispaused = !ispaused;
+            ispaused = false;
         }
-        Time.timeScale = isselecting.activeSelf || ispaused ? 0 : 1;
+
+        // Update is called once per frame
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                ispaused = !ispaused;
+            }
+            Time.timeScale = isselecting.activeSelf || ispaused ? 0 : 1;
+        }
     }
 }
