@@ -2,18 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class goblinAI : MonoBehaviour
+public class goblinAI : enemyAi
 {
-    [SerializeField] private GameObject playerdata;
     // Start is called before the first frame update
     void Start()
     {
-        
+        sr = gameObject.GetComponent<SpriteRenderer>();
+        movespeed = 2f;
     }
 
     // Update is called once per frame
     void Update()
     {
-       transform.position = Vector3.MoveTowards(gameObject.transform.position, playerdata.transform.position, 2*Time.deltaTime);
+        MoveToPlayer();
+        EnemyFlip();
     }
 }
