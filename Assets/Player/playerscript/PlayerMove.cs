@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Player.playerscript
@@ -13,7 +15,7 @@ namespace Player.playerscript
         private bool candash;
         private Rigidbody2D rb;
         public float dashamount;
-
+        private bool dashingonwall;
         private Vector2 dir;
         private Vector2 dashDir = new Vector3(1, 0, 0);
 
@@ -25,6 +27,7 @@ namespace Player.playerscript
             iswalking = false;
             playerani.SetBool("isidle", true);
             playerani.SetBool("isrun", false);
+            dashingonwall = false;
         }
 
         // Update is called once per frame
@@ -107,13 +110,33 @@ namespace Player.playerscript
         {
             for (var i = 0; i < 60; i++)
             {
-                var dashRange = (Time.deltaTime * dashamount * 3.6f);
-                rb.position += dashDir * dashRange;
+                if(!dashingonwall)
+                {
+                    var dashRange = (Time.deltaTime * dashamount * 3.6f);
+                    rb.position += dashDir * dashRange;
+
+                }
                 yield return null;
+
             }
 
             candash = true;
         }
-    
+
+        void OnCollisionEnter2D(Collision2D collider2D)
+        {
+            if (collider2D.gameObject.CompareTag("wall"))
+            {
+                dashingonwall = true;
+            }
+        }
+
+        private void OnCollisionExit2D(Collision2D collider2D)
+        {
+            if (collider2D.gameObject.CompareTag("wall"))
+            {
+                dashingonwall = false;
+            }
+        }
     }
 }

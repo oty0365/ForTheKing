@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 
 public class enemyAi : MonoBehaviour
 {
     [SerializeField] private GameObject playerdata;
     public float movespeed;
     protected SpriteRenderer sr;
+    public string faceing;
     // Start is called before the first frame update
    protected void Start()
     {
@@ -17,7 +19,7 @@ public class enemyAi : MonoBehaviour
     void Update()
     {
         MoveToPlayer();
-        EnemyFlip();
+        EnemyFlip(faceing);
     }
 
     protected void MoveToPlayer()
@@ -25,16 +27,32 @@ public class enemyAi : MonoBehaviour
         transform.position = Vector3.MoveTowards(gameObject.transform.position, playerdata.transform.position, movespeed*Time.deltaTime);
     }
 
-    protected void EnemyFlip()
+    protected void EnemyFlip(string faceing)
     {
-        if (gameObject.transform.position.x - playerdata.transform.position.x > 0)
+        if (this.faceing == "right")
         {
-            sr.flipX = true;
+            if (gameObject.transform.position.x - playerdata.transform.position.x > 0)
+            {
+                sr.flipX = true;
+            }
+            else
+            {
+                sr.flipX = false;
+            }
         }
-        else
+        else if (this.faceing == "left")
         {
-            sr.flipX = false;
+            if (gameObject.transform.position.x - playerdata.transform.position.x > 0)
+            {
+                sr.flipX = false;
+            }
+            else
+            {
+                sr.flipX = true;
+            }
         }
+
     }
+    
     
 }
