@@ -19,9 +19,11 @@ namespace Player.playerscript
         private Vector2 dir;
         private Vector2 dashDir = new Vector3(1, 0, 0);
 
+        private SpriteRenderer sr;
         // Start is called before the first frame update
         void Start()
         {
+            sr = gameObject.GetComponent<SpriteRenderer>();
             rb = gameObject.GetComponent<Rigidbody2D>();
             candash = true;
             iswalking = false;
@@ -108,6 +110,7 @@ namespace Player.playerscript
 
         private IEnumerator Dash()
         {
+            sr.color=Color.black;
             for (var i = 0; i < 60; i++)
             {
                 if(!dashingonwall)
@@ -117,8 +120,8 @@ namespace Player.playerscript
 
                 }
                 yield return null;
-
             }
+            sr.color=Color.white;
 
             candash = true;
         }

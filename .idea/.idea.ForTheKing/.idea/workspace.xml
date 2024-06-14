@@ -6,28 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c22a3450-7e3c-4862-90f3-fd4bbfd4a997" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/enemyAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/enemyAi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50).meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/goblin.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/goblin.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/goblinidle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/goblinidle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/sprite_0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/sprite_0.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/sprite_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/sprite_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/sprite_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/sprite_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/sprite_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/sprite_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/sprite_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/sprite_4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/sprite_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/New Piskel (50)/sprite_5.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/goblinAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/goblin/goblinAI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +104,7 @@
       <workItem from="1718179335115" duration="1905000" />
       <workItem from="1718184135185" duration="4320000" />
       <workItem from="1718234681996" duration="12230000" />
-      <workItem from="1718328498091" duration="7519000" />
+      <workItem from="1718328498091" duration="8225000" />
     </task>
     <servers />
   </component>
