@@ -12,24 +12,26 @@ namespace Player.playerscript
         [SerializeField] private Animator playerani;
         private Vector3 playerdir;
         private Vector3 playerdestination;
-        private bool candash;
+        private bool isdashing;
         private Rigidbody2D rb;
         public float dashamount;
         private bool dashingonwall;
         private Vector2 dir;
         private Vector2 dashDir = new Vector3(1, 0, 0);
-
+        [SerializeField]private float dashcooldown;
         private SpriteRenderer sr;
+        private bool candash;
         // Start is called before the first frame update
         void Start()
         {
             sr = gameObject.GetComponent<SpriteRenderer>();
             rb = gameObject.GetComponent<Rigidbody2D>();
-            candash = true;
+            isdashing = false;
             iswalking = false;
             playerani.SetBool("isidle", true);
             playerani.SetBool("isrun", false);
             dashingonwall = false;
+            candash = true;
         }
 
         // Update is called once per frame
@@ -103,15 +105,20 @@ namespace Player.playerscript
 
         private void PlayerDash()
         {
-            if (!Input.GetKeyDown(KeyCode.Space) || !candash) return;
-            candash = false;
-            StartCoroutine(Dash());
+            if (Input.GetKeyDown(KeyCode.Space) && !isdashing && candash)
+            {
+                    isdashing = true;
+                    candash = false;
+                    StartCoroutine(Dash());
+                    
+            }
+
         }
 
         private IEnumerator Dash()
         {
             sr.color=Color.black;
-            for (var i = 0; i < 60; i++)
+            for (var i = 0; i < 30; i++)
             {
                 if(!dashingonwall)
                 {
@@ -122,7 +129,9 @@ namespace Player.playerscript
                 yield return null;
             }
             sr.color=Color.white;
+            isdashing = false;
 
+            yield return new WaitForSeconds(dashcooldown);
             candash = true;
         }
 
