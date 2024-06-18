@@ -46,26 +46,26 @@ namespace Player.playerscript
         {
             iswalking = false;
             dir = Vector2.zero;
-            if (Input.GetKey(KeyCode.W))
+            if (Input.GetKey(KeyCode.W)&&!isdashing)
             {
                 iswalking = true;
                 dir.y += 1;
             }
 
-            if (Input.GetKey(KeyCode.S))
+            if (Input.GetKey(KeyCode.S)&&!isdashing)
             {
                 iswalking = true;
                 dir.y -= 1;
             }
 
-            if (Input.GetKey(KeyCode.A))
+            if (Input.GetKey(KeyCode.A)&&!isdashing)
             {
                 iswalking = true;
                 transform.localScale = new Vector3(-1.2f, 1.2f, 0);
                 dir.x -= 1;
             }
 
-            if (Input.GetKey(KeyCode.D))
+            if (Input.GetKey(KeyCode.D)&&!isdashing)
             {
                 iswalking = true;
                 transform.localScale = new Vector3(1.2f, 1.2f, 0);
@@ -118,11 +118,11 @@ namespace Player.playerscript
         private IEnumerator Dash()
         {
             sr.color=Color.black;
-            for (var i = 0; i < 30; i++)
+            for (float i = 0; i <0.5 ; i+=Time.deltaTime)
             {
                 if(!dashingonwall)
                 {
-                    var dashRange = (Time.deltaTime * dashamount * 3.6f);
+                    var dashRange = Time.deltaTime * dashamount * 3.6f;
                     rb.position += dashDir * dashRange;
 
                 }

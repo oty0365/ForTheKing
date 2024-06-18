@@ -48,4 +48,5 @@ public class WeaponArray : MonoBehaviour
         Playerstatus.Gold += WeaponData.Instance.GetWeaponData(CurrentWeponIndex).value;
         WeaponSelectManagementSystem.SetActive(false);
     }
+    
 }

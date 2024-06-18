@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
 
@@ -11,7 +12,7 @@ public class enemyAi : MonoBehaviour
     public string faceing;
     // Start is called before the first frame update
    protected void Start()
-    {
+   {
         sr = gameObject.GetComponent<SpriteRenderer>();
     }
 
@@ -53,6 +54,7 @@ public class enemyAi : MonoBehaviour
         }
 
     }
+    
     
     
 }
