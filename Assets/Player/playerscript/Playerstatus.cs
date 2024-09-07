@@ -56,7 +56,7 @@ public class Playerstatus : MonoBehaviour
     IEnumerator ChangeHealth(float health)
     {
         isinfinate = true;
-        for (float i = 0; i < 0.3f; i += Time.deltaTime)
+        for (float i = 0; i < 0.2f; i += Time.deltaTime)
         {
             playerhpveiw.value = Mathf.Lerp(playerhpveiw.value, health, 2 * Time.deltaTime);
             yield return null;
