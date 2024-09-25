@@ -10,12 +10,15 @@ using Random = UnityEngine.Random;
 public class WeaponArray : MonoBehaviour
 {
     public int CurrentWeponIndex;
+    private int _equiptedWaepon;
+    private GameObject _core;
     [FormerlySerializedAs("weaponsolt1")] public GameObject weaponSolt1;
     [SerializeField] private GameObject WeaponSelectManagementSystem;
     private int _size;
 
     void Start()
     {
+        _core = GameObject.FindWithTag("core");
         _size = Enum.GetValues(typeof(WeaponType)).Length;
         CurrentWeponIndex = Random.Range(0, _size);
     }
@@ -37,16 +40,29 @@ public class WeaponArray : MonoBehaviour
 
     public void EquipWeapon()
     {
-        GameObject temp = Instantiate(WeaponData.Instance.GetWeaponData(CurrentWeponIndex).prefab,
-            weaponSolt1.transform.position, Quaternion.identity, weaponSolt1.transform);
-        temp.transform.localRotation = _quaternion;
-        WeaponSelectManagementSystem.SetActive(false);
+        if (_core.transform.GetChild(0).childCount>0)
+        {
+            var ex = _core.transform.GetChild(0).GetChild(0);
+            Playerstatus.Gold += WeaponData.Instance.GetWeaponData(_equiptedWaepon).value;
+            Destroy(ex);
+        }
+        else
+        {
+            GameObject temp = Instantiate(WeaponData.Instance.GetWeaponData(CurrentWeponIndex).prefab,
+                weaponSolt1.transform.position, Quaternion.identity, weaponSolt1.transform);
+            temp.transform.localRotation = _quaternion;
+            WeaponSelectManagementSystem.SetActive(false);
+            _equiptedWaepon = CurrentWeponIndex; 
+            Destroy(Interaction.interactedBox);
+        }
+
     }
 
     public void ExchangeWeapon()
     {
         Playerstatus.Gold += WeaponData.Instance.GetWeaponData(CurrentWeponIndex).value;
         WeaponSelectManagementSystem.SetActive(false);
+        Destroy(Interaction.interactedBox);
     }
     
 }

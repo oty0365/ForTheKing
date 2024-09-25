@@ -1,23 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using Player.playerscript;
 using UnityEngine;
 
-public class Onemove : MonoBehaviour
+namespace WeponSys.One.OneScript
 {
-    public GameObject Player;
-    private PlayerMove _player;
-    public float spinspeed;
-    // Start is called before the first frame update
-    void Start()
+    public class OneMove : MonoBehaviour
     {
-        _player = Player.GetComponent<PlayerMove>();
-    }
+        private GameObject _player;
+        private PlayerMove _playerMove;
+        public float spinspeed;
+        // Start is called before the first frame update
+        void Start()
+        {
+            _player = GameObject.FindWithTag("player");
+            _playerMove = _player.GetComponent<PlayerMove>();
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        transform.position=_player.transform.position;
-        transform.Rotate(new Vector3(0,0,spinspeed*Time.deltaTime));
+        // Update is called once per frame
+        void Update()
+        {
+            transform.position=_player.transform.position;
+            transform.Rotate(new Vector3(0,0,spinspeed*Time.deltaTime));
+        }
     }
 }

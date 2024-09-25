@@ -8,6 +8,7 @@ TagManager:
   - lootchest
   - wall
   - enemy
+  - core
   layers:
   - Default
   - TransparentFX

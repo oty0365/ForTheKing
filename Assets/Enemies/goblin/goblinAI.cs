@@ -1,24 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
+using System;
+using Enemies;
 using UnityEngine;
 
-public class goblinAI : enemyAi
+public class GoblinAI : EnemyAi
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         sr = gameObject.GetComponent<SpriteRenderer>();
         movespeed = 2f;
         faceing = "right";
         
+
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
+    {
+        hp = 50f;
+        SetUpBehavior();
+        CheckBehavior();
+    }
+
+    public void Update()
     {
         MoveToPlayer();
         EnemyFlip(faceing);
+        CheckBehavior();
+        StatusCheck();
 
     }
     

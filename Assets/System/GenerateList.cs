@@ -1,7 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GenerateList
+namespace System
 {
-    public static HashSet<Vector2> generateList = new();
+    public class GenerateList
+    {
+        public static HashSet<Vector2> generateList = new();
+    }
 }

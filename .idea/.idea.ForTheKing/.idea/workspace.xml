@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22a3450-7e3c-4862-90f3-fd4bbfd4a997" name="Changes" comment="" />
+    <list default="true" id="c22a3450-7e3c-4862-90f3-fd4bbfd4a997" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/bat/BatAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/bat/BatAi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/enemyAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/enemyAi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/goblinAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/goblin/goblinAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/slime/SlimeAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/slime/SlimeAi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerInteraction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/System/Effect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/Effect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/System/GenerateList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/GenerateList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/System/Status.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/Status.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Banditsgambit/Banditsgambit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Banditsgambit/Banditsgambit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/WeaponArray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/WeaponArray.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponSys/One/OneScript/Onemove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponSys/One/OneScript/Onemove.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,11 +31,14 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/89/1936aac9/Time.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/94/6dff2f83/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/c0/38dcc4e0/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enemies/EnemyAi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemies/bat/BatAi.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enemies/enemyAi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemies/goblin/goblinAI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/System/Entity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/System/GenerateList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/System/Interaction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/System/ObjectGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/WeponS/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMPro_FontAssetCreatorWindow.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -113,6 +130,7 @@
       <workItem from="1726041534966" duration="238000" />
       <workItem from="1726062913743" duration="99000" />
       <workItem from="1727187989536" duration="358000" />
+      <workItem from="1727220647927" duration="9101000" />
     </task>
     <servers />
   </component>

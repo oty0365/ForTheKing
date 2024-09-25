@@ -39,6 +39,7 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (playercolider.gameObject.CompareTag("lootchest"))
         {
+            Interaction.interactedBox = playercolider.gameObject;
             isinteractingwithbox = true;
         }
     }

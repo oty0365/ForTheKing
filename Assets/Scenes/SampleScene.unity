@@ -3689,8 +3689,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8840de5b74424fe40ad4bd46749ffb50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerdata: {fileID: 451629258}
+  effect: 0
+  effects: 
   movespeed: 0
+  playerdata: {fileID: 451629258}
+  mosetrAni: {fileID: 0}
+  hp: 0
+  behavior: 0
   faceing: 
 --- !u!61 &561727162
 BoxCollider2D:
@@ -5255,7 +5260,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &763483253
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5358,8 +5363,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c956b40faca4643b9195c46c513ca4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerdata: {fileID: 451629258}
+  effect: 0
+  effects: 
   movespeed: 0
+  playerdata: {fileID: 451629258}
+  mosetrAni: {fileID: 0}
+  hp: 0
+  behavior: 0
   faceing: 
 --- !u!61 &763483257
 BoxCollider2D:
@@ -8016,8 +8026,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5704ef5e0ef6f1b42845756c912b0933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerdata: {fileID: 451629258}
+  effect: 0
+  effects: 
   movespeed: 0
+  playerdata: {fileID: 451629258}
+  mosetrAni: {fileID: 0}
+  hp: 0
+  behavior: 0
   faceing: 
 --- !u!61 &1489502888
 BoxCollider2D:
@@ -8074,7 +8089,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1499340974}
   - component: {fileID: 1499340973}
-  - component: {fileID: 1499340972}
   - component: {fileID: 1499340971}
   m_Layer: 0
   m_Name: Camera
@@ -8127,14 +8141,6 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!81 &1499340972
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1499340970}
-  m_Enabled: 1
 --- !u!20 &1499340973
 Camera:
   m_ObjectHideFlags: 0
@@ -58229,7 +58235,7 @@ GameObject:
   - component: {fileID: 1982654961}
   m_Layer: 0
   m_Name: Onecore
-  m_TagString: Untagged
+  m_TagString: core
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58262,7 +58268,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd07dc09c3d926d40aebcacf20efe72e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 451629258}
   spinspeed: 200
 --- !u!1 &2036372069
 GameObject:
