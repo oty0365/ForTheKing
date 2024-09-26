@@ -1,12 +1,14 @@
+using System;
+using Enemies;
 using UnityEngine;
 
 namespace WeponS
 {
     public class Weapon : MonoBehaviour
     {
-        protected bool canDestroy;
+        public bool canDestroy;
         protected float damage;
-        [SerializeField] protected int weaponTag;
+        public int weaponTag;
 
         protected void SetUpWeapon()
         {
@@ -19,6 +21,13 @@ namespace WeponS
             if (canDestroy)
             {
                 Destroy(gameObject);
+            }
+        }
+        protected void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.CompareTag("enemy"))
+            {
+                other.GetComponent<EnemyAi>().hp -= damage;
             }
         }
     }

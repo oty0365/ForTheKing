@@ -7,17 +7,31 @@
     <list default="true" id="c22a3450-7e3c-4862-90f3-fd4bbfd4a997" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemies/bat/BatAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/bat/BatAi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/enemyAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/enemyAi.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/goblinAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/goblin/goblinAI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemies/slime/SlimeAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/slime/SlimeAi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerInteraction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gold/GoldSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gold/GoldSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/Playerstatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/Playerstatus.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/System/Effect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/Effect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/System/GenerateList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/GenerateList.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/System/Status.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/Status.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/WeponS/Banditsgambit/Banditsgambit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Banditsgambit/Banditsgambit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Bloodkatana/Bloodkatana.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Bloodkatana/Bloodkatana.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Dagger/Dagger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Dagger/Dagger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Diasword/Diasword.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Diasword/Diasword.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Goldensword/Goldensword.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Goldensword/Goldensword.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Greatsword/Greatsword.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Greatsword/Greatsword.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Idol/Idol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Idol/Idol.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Katana/Katana.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Katana/Katana.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/NightsSword/Knightssword.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/NightsSword/Knightssword.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Sealedkatana/Sealedkatana.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Sealedkatana/Sealedkatana.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Sharktooth/Sharktooth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Sharktooth/Sharktooth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Shovle/Shovle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Shovle/Shovle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Skullsbone/Skullsbone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Skullsbone/Skullsbone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Swampknighf/Swampknife.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Swampknighf/Swampknife.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Trident/Trident.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Trident/Trident.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/VoidSword/Vampiretooth/Vampiretooth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/VoidSword/Vampiretooth/Vampiretooth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/VoidSword/Voidsword.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/VoidSword/Voidsword.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Weapon.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/WeponS/WeaponArray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/WeaponArray.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponSys/One/OneScript/Onemove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponSys/One/OneScript/Onemove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/WoodenSword.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/WoodenSword.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +144,7 @@
       <workItem from="1726041534966" duration="238000" />
       <workItem from="1726062913743" duration="99000" />
       <workItem from="1727187989536" duration="358000" />
-      <workItem from="1727220647927" duration="9101000" />
+      <workItem from="1727220647927" duration="17225000" />
     </task>
     <servers />
   </component>

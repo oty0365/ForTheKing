@@ -1,12 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Enemies;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Playerstatus : MonoBehaviour
+public class PlayerStatus : MonoBehaviour
 {
     public static float Hp;
     public static float Gold;
@@ -68,15 +69,16 @@ public class Playerstatus : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.tag.Equals("enemy"))
+        if (collider.CompareTag("enemyhitbox"))
         {
+            damageamount = collider.transform.parent.GetComponent<EnemyAi>().damage;
             gotdamge++;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.gameObject.tag.Equals("enemy"))
+        if (collider.CompareTag("enemyhitbox"))
         {
             gotdamge--;
         }

@@ -43,8 +43,16 @@ public class WeaponArray : MonoBehaviour
         if (_core.transform.GetChild(0).childCount>0)
         {
             var ex = _core.transform.GetChild(0).GetChild(0);
-            Playerstatus.Gold += WeaponData.Instance.GetWeaponData(_equiptedWaepon).value;
-            Destroy(ex);
+            var wp = ex.GetComponent<Weapon>();
+            var val = wp.weaponTag;
+            wp.canDestroy = true;
+            PlayerStatus.Gold += WeaponData.Instance.GetWeaponData(val).value;
+            GameObject temp = Instantiate(WeaponData.Instance.GetWeaponData(CurrentWeponIndex).prefab,
+                weaponSolt1.transform.position, Quaternion.identity, weaponSolt1.transform);
+            temp.transform.localRotation = _quaternion;
+            WeaponSelectManagementSystem.SetActive(false);
+            _equiptedWaepon = CurrentWeponIndex; 
+            Destroy(Interaction.interactedBox);
         }
         else
         {
@@ -60,7 +68,7 @@ public class WeaponArray : MonoBehaviour
 
     public void ExchangeWeapon()
     {
-        Playerstatus.Gold += WeaponData.Instance.GetWeaponData(CurrentWeponIndex).value;
+        PlayerStatus.Gold += WeaponData.Instance.GetWeaponData(CurrentWeponIndex).value;
         WeaponSelectManagementSystem.SetActive(false);
         Destroy(Interaction.interactedBox);
     }

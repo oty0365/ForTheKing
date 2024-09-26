@@ -17,7 +17,8 @@ public class SlimeAi : EnemyAi
 
     private void OnEnable()
     {
-        hp = 10f;
+        hp = 30f;
+        SetUpEnemy();
         SetUpBehavior();
         CheckBehavior();
     }

@@ -19,12 +19,13 @@ namespace Enemies
 
     public class EnemyAi : Entity
     {
-        [SerializeField] private GameObject playerdata;
-        [SerializeField] private Animator mosetrAni;
+        protected GameObject playerdata;
+        protected Animator monsterAni;
         public float hp;
         protected SpriteRenderer sr;
         public Behavior behavior;
         public string faceing;
+        public float damage;
         protected void Start()
         {
             sr = gameObject.GetComponent<SpriteRenderer>();
@@ -36,9 +37,17 @@ namespace Enemies
             EnemyFlip(faceing);
         }
 
+        protected void SetUpEnemy()
+        {
+            playerdata = GameObject.FindWithTag("player").gameObject;
+            monsterAni = GetComponent<Animator>();
+        }
+        
+
         protected void SetUpBehavior()
         {
             behavior = Behavior.idle;
+            
         }
 
         protected void CheckBehavior()

@@ -16,6 +16,7 @@ public class BatAi :EnemyAi
     private void OnEnable()
     {
         hp = 15f;
+        SetUpEnemy();
         SetUpBehavior();
         CheckBehavior();
     }
