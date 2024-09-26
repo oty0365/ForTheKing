@@ -15,6 +15,7 @@ public class GoblinAI : EnemyAi
 
     private void OnEnable()
     {
+        damage = 2f;
         hp = 50f;
         SetUpEnemy();
         SetUpBehavior();

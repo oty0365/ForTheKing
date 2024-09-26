@@ -2203,7 +2203,7 @@ GameObject:
   - component: {fileID: 369721732}
   m_Layer: 0
   m_Name: hitbox
-  m_TagString: enemy
+  m_TagString: enemyhitbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3353,7 +3353,7 @@ GameObject:
   - component: {fileID: 536649893}
   m_Layer: 0
   m_Name: hitbox
-  m_TagString: enemy
+  m_TagString: enemyhitbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3580,13 +3580,14 @@ GameObject:
   - component: {fileID: 561727158}
   - component: {fileID: 561727161}
   - component: {fileID: 561727162}
+  - component: {fileID: 561727163}
   m_Layer: 7
   m_Name: bat
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &561727158
 Animator:
   serializedVersion: 5
@@ -3692,11 +3693,10 @@ MonoBehaviour:
   effect: 0
   effects: 
   movespeed: 0
-  playerdata: {fileID: 451629258}
-  mosetrAni: {fileID: 0}
   hp: 0
   behavior: 0
   faceing: 
+  damage: 0
 --- !u!61 &561727162
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3742,6 +3742,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.517962, y: 0.70581526}
   m_EdgeRadius: 0
+--- !u!50 &561727163
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561727157}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &584142232
 GameObject:
   m_ObjectHideFlags: 0
@@ -5256,7 +5283,7 @@ GameObject:
   - component: {fileID: 763483257}
   m_Layer: 7
   m_Name: goblin
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5366,11 +5393,10 @@ MonoBehaviour:
   effect: 0
   effects: 
   movespeed: 0
-  playerdata: {fileID: 451629258}
-  mosetrAni: {fileID: 0}
   hp: 0
   behavior: 0
   faceing: 
+  damage: 0
 --- !u!61 &763483257
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7225,7 +7251,7 @@ GameObject:
   - component: {fileID: 1312535066}
   m_Layer: 0
   m_Name: hitbox
-  m_TagString: enemy
+  m_TagString: enemyhitbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7917,13 +7943,14 @@ GameObject:
   - component: {fileID: 1489502886}
   - component: {fileID: 1489502887}
   - component: {fileID: 1489502888}
+  - component: {fileID: 1489502889}
   m_Layer: 7
   m_Name: slime
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1489502884
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8029,11 +8056,10 @@ MonoBehaviour:
   effect: 0
   effects: 
   movespeed: 0
-  playerdata: {fileID: 451629258}
-  mosetrAni: {fileID: 0}
   hp: 0
   behavior: 0
   faceing: 
+  damage: 0
 --- !u!61 &1489502888
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8079,6 +8105,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.58884466, y: 0.35292545}
   m_EdgeRadius: 0
+--- !u!50 &1489502889
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489502883}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1499340970
 GameObject:
   m_ObjectHideFlags: 0

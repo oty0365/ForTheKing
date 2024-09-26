@@ -9,6 +9,7 @@ TagManager:
   - wall
   - enemy
   - core
+  - enemyhitbox
   layers:
   - Default
   - TransparentFX
