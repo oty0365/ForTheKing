@@ -22,6 +22,7 @@ namespace Enemies
     public class EnemyAi : Entity
     {
         protected GameObject playerdata;
+        protected PlayerStatus _playerStatus;
         protected Animator monsterAni;
         public float exp;
         protected SpriteRenderer sr;
@@ -31,12 +32,13 @@ namespace Enemies
 
         protected void Start()
         {
-            sr = gameObject.GetComponent<SpriteRenderer>();
         }
 
         protected void SetUpEnemy()
         {
+            sr = gameObject.GetComponent<SpriteRenderer>();
             playerdata = GameObject.FindWithTag("player").gameObject;
+            _playerStatus = playerdata.GetComponent<PlayerStatus>();
             monsterAni = GetComponent<Animator>();
         }
         
@@ -88,11 +90,14 @@ namespace Enemies
             }
 
         }
-
+        
         protected void DeathCheck()
         {
+            //Debug.Log(_playerStatus);
             if (hp <= 0)
             {
+                PlayerStatus.Exp = exp;
+                _playerStatus.ExpUp();
                 Destroy(gameObject);
             }
         }

@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class SlimeAi : EnemyAi
 {
-    // Start is called before the first frame update
     void Start()
     {
         sr = gameObject.GetComponent<SpriteRenderer>();

@@ -9,6 +9,9 @@ public class GoblinAI : EnemyAi
         sr = gameObject.GetComponent<SpriteRenderer>();
         movespeed = 2f;
         faceing = "right";
+        SetUpEnemy();
+        SetUpBehavior();
+        CheckBehavior();
         
 
     }
@@ -20,10 +23,12 @@ public class GoblinAI : EnemyAi
         SetUpEnemy();
         SetUpBehavior();
         CheckBehavior();
+        
     }
 
     public void Update()
     {
+        Debug.Log(playerdata);
         MoveToPlayer();
         EnemyFlip(faceing);
         CheckBehavior();

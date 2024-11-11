@@ -6,34 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c22a3450-7e3c-4862-90f3-fd4bbfd4a997" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/bat/BatAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/bat/BatAi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/enemyAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/enemyAi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/goblin/goblinAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/goblin/goblinAI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemies/slime/SlimeAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/slime/SlimeAi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerMove.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/Playerstatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/Playerstatus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/System/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/System/Generator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/Generator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Banditsgambit/Bandit'sgambit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Banditsgambit/Bandit'sgambit.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Bloodkatana/Bloodkatana.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Bloodkatana/Bloodkatana.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Dagger/Dagger.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Dagger/Dagger.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Diasword/Diasword.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Diasword/Diasword.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Goldensword/Goldensword.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Goldensword/Goldensword.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Greatsword/Greatsword.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Greatsword/Greatsword.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Idol/Idol.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Idol/Idol.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Katana/Katana.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Katana/Katana.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/NightsSword/knightssword.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/NightsSword/knightssword.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Sealedkatana/Sealdkatana.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Sealedkatana/Sealdkatana.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Sharktooth/Sharktooth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Sharktooth/Sharktooth.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Shovle/Shovle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Shovle/Shovle.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Skullsbone/Skullsbone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Skullsbone/Skullsbone.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Swampknighf/Swampkinfe.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Swampknighf/Swampkinfe.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Swampknighf/Swampknife.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Swampknighf/Swampknife.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Trident/Trident.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Trident/Trident.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/VoidSword/Voidsword.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/VoidSword/Voidsword.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/System/Pause/Gamepause.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/Pause/Gamepause.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/WeponS/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponSys/One/OneScript/Onemove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponSys/One/OneScript/Onemove.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +24,14 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/89/1936aac9/Time.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/94/6dff2f83/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/c0/38dcc4e0/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Augments/Augments.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Augments/AugmentsManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Augments/DamageUp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Augments/HpUp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Augments/SpeedUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemies/EnemyAi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemies/bat/BatAi.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enemies/goblin/goblinAI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enemies/goblin/GoblinAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/System/Entity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/System/GenerateList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/System/Interaction.cs" root0="FORCE_HIGHLIGHTING" />
@@ -151,7 +133,7 @@
       <workItem from="1727353141413" duration="1608000" />
       <workItem from="1727700211830" duration="221000" />
       <workItem from="1729603143506" duration="436000" />
-      <workItem from="1731283601238" duration="13661000" />
+      <workItem from="1731283601238" duration="18786000" />
     </task>
     <servers />
   </component>

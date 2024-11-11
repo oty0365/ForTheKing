@@ -10,6 +10,7 @@ public class PlayerStatus : MonoBehaviour
     public static float Gold;
     public static float Exp;
     public static float MaxExp=50;
+    public static float AttakDmg = 0;
     [SerializeField] private Slider playerhpveiw;
     [SerializeField] private Slider playerexpveiw;
     public float damageamount;
@@ -19,8 +20,11 @@ public class PlayerStatus : MonoBehaviour
     void Start()
     {
         Hp = 100f;
+        Exp = 0f;
         Gold = 0;
         playerhpveiw.value = Hp;
+        playerexpveiw.maxValue = MaxExp;
+        playerexpveiw.value = Exp;
         isinfinate = false;
         gotdamge = 0;
     }
@@ -34,8 +38,13 @@ public class PlayerStatus : MonoBehaviour
             HpDecrease();
         }
         
+
     }
 
+    private void ExpCheck()
+    {
+        
+    }
     public void HpDecrease()
     {
         if (Hp > 0)
@@ -65,6 +74,11 @@ public class PlayerStatus : MonoBehaviour
         playerhpveiw.value = health;
         yield return new WaitForSeconds(infinatetime);
         isinfinate = false;
+    }
+
+    public void ExpUp()
+    {
+        playerexpveiw.value += Exp;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

@@ -5,7 +5,7 @@ namespace System.Pause
     public class Gamepause : MonoBehaviour
     {
         [NonSerialized]public bool ispaused;
-
+        [SerializeField] private GameObject isaugmenting;
         [SerializeField] private GameObject isselecting;
         // Start is called before the first frame update
         void Start()

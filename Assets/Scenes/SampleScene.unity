@@ -1086,6 +1086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 130c85f94638bc04db6fa7029eae25aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isaugmenting: {fileID: 0}
   isselecting: {fileID: 403310880}
 --- !u!4 &83524481
 Transform:
@@ -1236,6 +1237,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105050052}
   m_CullTransparentMesh: 1
+--- !u!1 &115468161
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 115468163}
+  - component: {fileID: 115468162}
+  m_Layer: 0
+  m_Name: AugmentData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &115468162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115468161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37411baf47ec1694bab4165425f9f286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  augments:
+  - {fileID: 3660434857093307288, guid: 4c97b38fe0a7c5845803e6899fe534f1, type: 3}
+  - {fileID: 4030885454613260541, guid: 6d38f7056994947408af04e4fa2046c8, type: 3}
+  - {fileID: 6669383572651760112, guid: c1f80505bfe8bea43af170b132033257, type: 3}
+--- !u!4 &115468163
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115468161}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1, y: -0.6, z: -3.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &123572080
 GameObject:
   m_ObjectHideFlags: 0
@@ -2334,7 +2383,7 @@ GameObject:
   - component: {fileID: 279236285}
   m_Layer: 6
   m_Name: playerscape
-  m_TagString: player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3554,7 +3603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerhpveiw: {fileID: 290093031}
-  playerexpveiw: {fileID: 0}
+  playerexpveiw: {fileID: 2036159078}
   damageamount: 5
   isinfinate: 0
   gotdamge: 0
@@ -4443,6 +4492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 10
   effect: 0
+  effects: 
   movespeed: 2
   exp: 10
   behavior: 0
@@ -6409,6 +6459,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 50
   effect: 0
+  effects: 
   movespeed: 0.3
   exp: 30
   behavior: 0
@@ -10421,7 +10472,7 @@ GameObject:
   - component: {fileID: 1482898349}
   - component: {fileID: 1482898348}
   m_Layer: 5
-  m_Name: Expbar
+  m_Name: ExpbarOutline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10609,6 +10660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 20
   effect: 0
+  effects: 
   movespeed: 0.2
   exp: 20
   behavior: 0
@@ -61680,7 +61732,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd07dc09c3d926d40aebcacf20efe72e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spinspeed: 200
 --- !u!1 &2000072009
 GameObject:
   m_ObjectHideFlags: 0
@@ -62406,4 +62457,5 @@ SceneRoots:
   - {fileID: 561727160}
   - {fileID: 1489502885}
   - {fileID: 817355113}
+  - {fileID: 115468163}
   - {fileID: 1499340974}
