@@ -23,11 +23,12 @@ namespace WeponS
                 Destroy(gameObject);
             }
         }
-        protected void OnTriggerEnter2D(Collider2D other)
+       public virtual void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.CompareTag("enemy"))
+            if (!other.CompareTag("enemy")) return;
+            if (other.TryGetComponent(out EnemyAi enemyAi))
             {
-                other.GetComponent<EnemyAi>().hp -= damage;
+                enemyAi.hp -= damage;
             }
         }
     }

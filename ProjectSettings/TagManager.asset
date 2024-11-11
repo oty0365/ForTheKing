@@ -10,6 +10,7 @@ TagManager:
   - enemy
   - core
   - enemyhitbox
+  - weapon
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - UI
   - player
   - enemy
-  - 
+  - hit
   - 
   - 
   - 

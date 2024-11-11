@@ -1,8 +1,5 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using Enemies;
-using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,7 +8,10 @@ public class PlayerStatus : MonoBehaviour
 {
     public static float Hp;
     public static float Gold;
+    public static float Exp;
+    public static float MaxExp=50;
     [SerializeField] private Slider playerhpveiw;
+    [SerializeField] private Slider playerexpveiw;
     public float damageamount;
     public bool isinfinate;
     public int gotdamge;
@@ -27,7 +27,7 @@ public class PlayerStatus : MonoBehaviour
     // Start is called before the first frame update
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (gotdamge!=0 && !isinfinate)
         {
@@ -54,7 +54,7 @@ public class PlayerStatus : MonoBehaviour
         }
     }
 
-    IEnumerator ChangeHealth(float health)
+    private IEnumerator ChangeHealth(float health)
     {
         isinfinate = true;
         for (float i = 0; i < 0.2f; i += Time.deltaTime)
@@ -67,18 +67,16 @@ public class PlayerStatus : MonoBehaviour
         isinfinate = false;
     }
 
-    void OnTriggerEnter2D(Collider2D collider)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collider.CompareTag("enemyhitbox"))
-        {
-            damageamount = collider.transform.parent.GetComponent<EnemyAi>().damage;
-            gotdamge++;
-        }
+        if (!other.CompareTag("enemyhitbox")) return;
+        damageamount = other.transform.parent.GetComponent<EnemyAi>().damage;
+        gotdamge++;
     }
 
-    private void OnTriggerExit2D(Collider2D collider)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        if (collider.CompareTag("enemyhitbox"))
+        if (other.CompareTag("enemyhitbox"))
         {
             gotdamge--;
         }

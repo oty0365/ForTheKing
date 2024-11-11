@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4828063901212289468}
   m_Layer: 0
   m_Name: Bandit'sgambit
-  m_TagString: Untagged
+  m_TagString: weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,3 +143,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fbb96e8a0e8ef2498261b1e06d3e690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canDestroy: 0
+  weaponTag: 0

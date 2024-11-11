@@ -12,16 +12,6 @@ namespace System
         protected int xPos;
         protected int yPos;
         public GameObject preFab;
-        private void Start()
-        {
-            
-        }
-
-        private void Update()
-        {
-            
-        }
-
         public void Spawn(GameObject preFabType)
         {
             for (; startValue <= spwanCount; startValue++)

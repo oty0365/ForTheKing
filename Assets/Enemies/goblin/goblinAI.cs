@@ -28,6 +28,7 @@ public class GoblinAI : EnemyAi
         EnemyFlip(faceing);
         CheckBehavior();
         StatusCheck();
+        DeathCheck();
 
     }
     

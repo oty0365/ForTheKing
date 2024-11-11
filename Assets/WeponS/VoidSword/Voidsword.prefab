@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4204719571711048886}
   m_Layer: 0
   m_Name: Voidsword
-  m_TagString: Untagged
+  m_TagString: weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,6 +145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f79544b59a483a14f983726f9d6b1694, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canDestroy: 0
+  weaponTag: 0
 --- !u!1 &8237897169500485971
 GameObject:
   m_ObjectHideFlags: 0

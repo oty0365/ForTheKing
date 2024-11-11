@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 372647881987529337}
   m_Layer: 0
   m_Name: Sharktooth
-  m_TagString: Untagged
+  m_TagString: weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,3 +143,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 553fc7be1a5a7ef41a537b883556b36d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canDestroy: 0
+  weaponTag: 0

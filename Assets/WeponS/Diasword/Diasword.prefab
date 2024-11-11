@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1808528714107254189}
   m_Layer: 0
   m_Name: Diasword
-  m_TagString: Untagged
+  m_TagString: weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,3 +143,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a44082be05d6e344a2ba7a93a9b27eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canDestroy: 0
+  weaponTag: 0

@@ -29,5 +29,6 @@ public class BatAi :EnemyAi
         EnemyFlip(faceing);
         CheckBehavior();
         StatusCheck();
+        DeathCheck();
     }
 }

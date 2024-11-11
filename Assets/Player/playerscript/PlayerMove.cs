@@ -12,7 +12,7 @@ namespace Player.playerscript
         [SerializeField] private Animator playerani;
         private Vector3 playerdir;
         private Vector3 playerdestination;
-        private bool isdashing;
+        public static bool isdashing;
         private Rigidbody2D rb;
         public float dashamount;
         private bool dashingonwall;
@@ -21,6 +21,9 @@ namespace Player.playerscript
         [SerializeField]private float dashcooldown;
         private SpriteRenderer sr;
         private bool candash;
+        [SerializeField] private LayerMask enemy;
+
+        [SerializeField] private Collider2D hitbox;
         // Start is called before the first frame update
         void Start()
         {
@@ -118,6 +121,7 @@ namespace Player.playerscript
         private IEnumerator Dash()
         {
             sr.color=Color.black;
+            hitbox.excludeLayers += enemy;
             for (float i = 0; i <0.5 ; i+=Time.deltaTime)
             {
                 if(!dashingonwall)
@@ -128,6 +132,7 @@ namespace Player.playerscript
                 }
                 yield return null;
             }
+            hitbox.excludeLayers -= enemy;
             sr.color=Color.white;
             isdashing = false;
 

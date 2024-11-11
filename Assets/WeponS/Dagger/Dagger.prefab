@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5726121109792896515}
   m_Layer: 0
   m_Name: Dagger
-  m_TagString: Untagged
+  m_TagString: weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,3 +143,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f86ebda38a21f2248a5c0a9a3367edef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canDestroy: 0
+  weaponTag: 0

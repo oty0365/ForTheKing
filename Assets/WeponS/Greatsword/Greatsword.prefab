@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1288737673023202432}
   m_Layer: 0
   m_Name: Greatsword
-  m_TagString: Untagged
+  m_TagString: weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,6 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02f0d296b8e4325499d7e6f1ae9e85b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canDestroy: 0
+  weaponTag: 0
 --- !u!61 &1288737673023202432
 BoxCollider2D:
   m_ObjectHideFlags: 0

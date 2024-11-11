@@ -1,5 +1,7 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
+using WeponS;
 
 namespace Enemies
 {
@@ -21,20 +23,15 @@ namespace Enemies
     {
         protected GameObject playerdata;
         protected Animator monsterAni;
-        public float hp;
+        public float exp;
         protected SpriteRenderer sr;
         public Behavior behavior;
         public string faceing;
         public float damage;
+
         protected void Start()
         {
             sr = gameObject.GetComponent<SpriteRenderer>();
-        }
-        
-        void Update()
-        {
-            MoveToPlayer();
-            EnemyFlip(faceing);
         }
 
         protected void SetUpEnemy()
@@ -91,8 +88,14 @@ namespace Enemies
             }
 
         }
-    
-    
-    
+
+        protected void DeathCheck()
+        {
+            if (hp <= 0)
+            {
+                Destroy(gameObject);
+            }
+        }
+        
     }
 }

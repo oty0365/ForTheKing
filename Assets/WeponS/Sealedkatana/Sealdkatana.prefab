@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2513062021070398406}
   m_Layer: 0
   m_Name: Sealdkatana
-  m_TagString: Untagged
+  m_TagString: weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,3 +143,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca5085930d9aa364aa8e57b9939bbf06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canDestroy: 0
+  weaponTag: 0

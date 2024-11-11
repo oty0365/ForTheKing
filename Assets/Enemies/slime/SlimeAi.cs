@@ -31,6 +31,7 @@ public class SlimeAi : EnemyAi
         EnemyFlip(faceing);
         CheckBehavior();
         StatusCheck();
+        DeathCheck();
     }
 
     private void SlowSlip()
