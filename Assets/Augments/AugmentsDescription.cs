@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using WeponS;
 
-public class AugmentName : MonoBehaviour
+public class AugmentsDescription : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI augmentName;
 
@@ -16,8 +15,8 @@ public class AugmentName : MonoBehaviour
         augmentsUi = augment.GetComponent<AugmentsUi>();
     }
 
-    public void SetAugmentName()
+    public void SetAugmentDescription()
     {
-        augmentName.text = augmentsUi.augmentsManager.augments[augmentsUi.augmentsManager._currentWeaponIndex].name;
+        augmentName.text = augmentsUi.augmentsManager.augments[augmentsUi.augmentsManager._currentWeaponIndex].description;
     }
 }

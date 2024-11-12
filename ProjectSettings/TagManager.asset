@@ -12,6 +12,7 @@ TagManager:
   - enemyhitbox
   - weapon
   - gatcha
+  - augments
   layers:
   - Default
   - TransparentFX

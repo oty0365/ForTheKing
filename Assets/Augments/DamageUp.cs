@@ -7,6 +7,6 @@ public class DamageUp : Augments
 {
     public override void ActiveAugment()
     {
-        PlayerStatus.AttakDmg += 5;
+        PlayerStatus.AttakDmg += 15;
     }
 }

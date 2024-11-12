@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Pause;
 using Enemies;
@@ -42,7 +43,12 @@ public class PlayerStatus : MonoBehaviour
         {
             HpDecrease();
         }
-        
+
+        if (Exp >= MaxExp)
+        {
+            augmentSelect.SetActive(true);
+            AugmentPanelManager.selectionTime.Invoke();
+        }
 
     }
 
