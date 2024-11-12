@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Pause;
 using Enemies;
 using UnityEditor;
 using UnityEngine;
@@ -13,15 +14,19 @@ public class PlayerStatus : MonoBehaviour
     public static float AttakDmg = 0;
     [SerializeField] private Slider playerhpveiw;
     [SerializeField] private Slider playerexpveiw;
+    [SerializeField] private GameObject augmentSelect;
+    [SerializeField] private WeaponArray weaponArray;
     public float damageamount;
     public bool isinfinate;
     public int gotdamge;
     public float infinatetime;
+    private bool _isActive;
     void Start()
     {
         Hp = 100f;
         Exp = 0f;
         Gold = 0;
+        _isActive = false;
         playerhpveiw.value = Hp;
         playerexpveiw.maxValue = MaxExp;
         playerexpveiw.value = Exp;

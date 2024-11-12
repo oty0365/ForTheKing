@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using WeponS;
 
-public class Itemdmgamt : MonoBehaviour
+public class ItemDmgAmt : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI itemdmgamt;
 
@@ -12,13 +12,13 @@ public class Itemdmgamt : MonoBehaviour
 
     private WeaponArray randomitem;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         randomitem = RandomItem.GetComponent<WeaponArray>();
     }
 
     // Update is called once per frame
-    void Update()
+    public void SetItemDmgMnt()
     {
         itemdmgamt.text = WeaponData.Instance.GetWeaponData(randomitem.CurrentWeponIndex).wepondamage.ToString();
     }

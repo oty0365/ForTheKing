@@ -6,11 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="c22a3450-7e3c-4862-90f3-fd4bbfd4a997" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/slime/SlimeAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/slime/SlimeAi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Augments/AugmentsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Augments/AugmentsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Augments/SpeedUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Augments/SpeedUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerInteraction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/Playerstatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/Playerstatus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/System/Pause/Gamepause.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/Pause/Gamepause.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/System/Generator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/Generator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/ItemImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/ItemImage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/ItemText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/ItemText.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Itemdescription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Itemdescription.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Itemdmgamt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Itemdmgamt.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Itemrarity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Itemrarity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Itemvalue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Itemvalue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/WeaponArray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/WeaponArray.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/WeponSys/One/OneScript/Onemove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponSys/One/OneScript/Onemove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +34,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/89/1936aac9/Time.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/94/6dff2f83/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/c0/38dcc4e0/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Augments/AugmentName.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Augments/Augments.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Augments/AugmentsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Augments/DamageUp.cs" root0="FORCE_HIGHLIGHTING" />
@@ -36,6 +47,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/System/GenerateList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/System/Interaction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/System/ObjectGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/System/PannelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WeponS/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMPro_FontAssetCreatorWindow.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -133,7 +145,7 @@
       <workItem from="1727353141413" duration="1608000" />
       <workItem from="1727700211830" duration="221000" />
       <workItem from="1729603143506" duration="436000" />
-      <workItem from="1731283601238" duration="18786000" />
+      <workItem from="1731283601238" duration="35530000" />
     </task>
     <servers />
   </component>

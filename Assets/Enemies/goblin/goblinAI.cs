@@ -28,7 +28,6 @@ public class GoblinAI : EnemyAi
 
     public void Update()
     {
-        Debug.Log(playerdata);
         MoveToPlayer();
         EnemyFlip(faceing);
         CheckBehavior();

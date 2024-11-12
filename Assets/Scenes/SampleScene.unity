@@ -1019,6 +1019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Itmeimage: {fileID: 80227467}
   RandomItem: {fileID: 1070251650}
+  randomitem: {fileID: 0}
 --- !u!114 &80227467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1270,6 +1271,7 @@ MonoBehaviour:
   - {fileID: 3660434857093307288, guid: 4c97b38fe0a7c5845803e6899fe534f1, type: 3}
   - {fileID: 4030885454613260541, guid: 6d38f7056994947408af04e4fa2046c8, type: 3}
   - {fileID: 6669383572651760112, guid: c1f80505bfe8bea43af170b132033257, type: 3}
+  _currentWeaponIndex: 0
 --- !u!4 &115468163
 Transform:
   m_ObjectHideFlags: 0
@@ -2941,13 +2943,14 @@ GameObject:
   - component: {fileID: 403310881}
   - component: {fileID: 403310883}
   - component: {fileID: 403310882}
+  - component: {fileID: 403310884}
   m_Layer: 5
   m_Name: ItemSelctionSystem
-  m_TagString: Untagged
+  m_TagString: gatcha
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &403310881
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3008,6 +3011,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 403310880}
   m_CullTransparentMesh: 1
+--- !u!114 &403310884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403310880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ca9ed28ff9ae14d92e82291b20893b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponArrays:
+  - {fileID: 2041857562}
+  - {fileID: 1070251652}
+  - {fileID: 857975276}
+  itemValue:
+  - {fileID: 1876609536}
+  - {fileID: 1338315320}
+  - {fileID: 891828828}
+  itemDmgAmt:
+  - {fileID: 1631375229}
+  - {fileID: 254029068}
+  - {fileID: 908666871}
+  itemImages:
+  - {fileID: 1478172211}
+  - {fileID: 80227466}
+  - {fileID: 1364197188}
+  itemTexts:
+  - {fileID: 639672137}
+  - {fileID: 752684038}
+  - {fileID: 1719373582}
+  itemDescriptions:
+  - {fileID: 1630703686}
+  - {fileID: 1514600427}
+  - {fileID: 555446491}
+  itemRarities:
+  - {fileID: 130784014}
+  - {fileID: 1966808182}
+  - {fileID: 786102460}
 --- !u!1 &405895499
 GameObject:
   m_ObjectHideFlags: 0
@@ -3604,6 +3647,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerhpveiw: {fileID: 290093031}
   playerexpveiw: {fileID: 2036159078}
+  augmentSelect: {fileID: 0}
+  weaponArray: {fileID: 0}
   damageamount: 5
   isinfinate: 0
   gotdamge: 0
@@ -3621,10 +3666,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isinteractingwithbox: 0
-  arrayweapon1: {fileID: 2041857560}
-  arrayweapon2: {fileID: 1070251650}
-  arrayweapon3: {fileID: 857975274}
-  gatcha: {fileID: 403310880}
 --- !u!96 &451629267
 TrailRenderer:
   serializedVersion: 3
@@ -7021,6 +7062,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Itmeimage: {fileID: 803737520}
   RandomItem: {fileID: 2013267509}
+  randomitem: {fileID: 0}
 --- !u!114 &803737520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7695,7 +7737,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d4246220e067347811d87193a94988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemvalue: {fileID: 891828829}
   RandomItem: {fileID: 857975274}
 --- !u!114 &891828829
 MonoBehaviour:
@@ -8808,6 +8849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Itmeimage: {fileID: 1128178910}
   RandomItem: {fileID: 555799471}
+  randomitem: {fileID: 0}
 --- !u!114 &1128178910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9575,7 +9617,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d4246220e067347811d87193a94988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemvalue: {fileID: 1338315321}
   RandomItem: {fileID: 1070251650}
 --- !u!114 &1338315321
 MonoBehaviour:
@@ -10033,6 +10074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Itmeimage: {fileID: 1364197189}
   RandomItem: {fileID: 857975274}
+  randomitem: {fileID: 0}
 --- !u!114 &1364197189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10460,6 +10502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Itmeimage: {fileID: 1478172209}
   RandomItem: {fileID: 2041857560}
+  randomitem: {fileID: 0}
 --- !u!1 &1482898346
 GameObject:
   m_ObjectHideFlags: 0
@@ -45358,6 +45401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Itmeimage: {fileID: 1693477813}
   RandomItem: {fileID: 1355707072}
+  randomitem: {fileID: 0}
 --- !u!114 &1693477813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61139,7 +61183,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d4246220e067347811d87193a94988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemvalue: {fileID: 1876609537}
   RandomItem: {fileID: 2041857560}
 --- !u!114 &1876609537
 MonoBehaviour:

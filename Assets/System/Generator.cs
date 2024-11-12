@@ -24,17 +24,16 @@ namespace System
                 Check(preFabType);
                
             }
+            GenerateList.generateList.Clear();
         }
         public void Check(GameObject preFabType)
         {
                 if (GenerateList.generateList.Contains(generatePos))
                 {
-                    Debug.Log(preFabType);
                     startValue--;
                 }
                 else
                 {
-                    Debug.Log(preFabType);
                     GenerateList.generateList.Add(generatePos);
                     Debug.Log(GenerateList.generateList);
                     Instantiate(preFabType, generatePos, Quaternion.Euler(spwanAngle));

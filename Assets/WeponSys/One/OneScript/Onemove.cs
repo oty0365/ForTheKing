@@ -8,15 +8,13 @@ namespace WeponSys.One.OneScript
         private GameObject _player;
         private PlayerMove _playerMove;
         public static float spinspeed;
-        // Start is called before the first frame update
         void Start()
         {
-            spinspeed = 20f;
+            spinspeed = 200f;
             _player = GameObject.FindWithTag("player");
             _playerMove = _player.GetComponent<PlayerMove>();
         }
-
-        // Update is called once per frame
+        
         void Update()
         {
             transform.position=_player.transform.position;

@@ -1,44 +1,43 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using WeponS;
 
-public class Itemrarity : MonoBehaviour
+public class ItemRarity : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI itemrarity;
 
     public GameObject RandomItem;
 
     private WeaponArray randomitem;
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         randomitem = RandomItem.GetComponent<WeaponArray>();
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    public void SetWeaponItemRarity()
     {
-        if (WeaponData.Instance.GetWeaponData(randomitem.CurrentWeponIndex).weponrarity == Rarity.Common)
+        switch (WeaponData.Instance.GetWeaponData(randomitem.CurrentWeponIndex).weponrarity)
         {
-            itemrarity.color = Color.cyan;
-        }
-        else if (WeaponData.Instance.GetWeaponData(randomitem.CurrentWeponIndex).weponrarity == Rarity.Rare)
-        {
-            itemrarity.color = Color.green;
-        }
-        else if (WeaponData.Instance.GetWeaponData(randomitem.CurrentWeponIndex).weponrarity == Rarity.Epic)
-        {
-            itemrarity.color = Color.magenta;
-        }
-        else if (WeaponData.Instance.GetWeaponData(randomitem.CurrentWeponIndex).weponrarity == Rarity.Legendary)
-        {
-            itemrarity.color = Color.yellow;
-        }
-        else if (WeaponData.Instance.GetWeaponData(randomitem.CurrentWeponIndex).weponrarity == Rarity.Unknown)
-        {
-            itemrarity.color = Color.red;
+            case Rarity.Common:
+                itemrarity.color = Color.cyan;
+                break;
+            case Rarity.Rare:
+                itemrarity.color =Color.green;
+                break;
+            case Rarity.Epic:
+                itemrarity.color = Color.magenta;
+                break;
+            case Rarity.Legendary:
+                itemrarity.color = Color.yellow;
+                break;
+            case Rarity.Unknown:
+                itemrarity.color = Color.red;
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
         }
         itemrarity.text = WeaponData.Instance.GetWeaponData(randomitem.CurrentWeponIndex).weponrarity.ToName();
 

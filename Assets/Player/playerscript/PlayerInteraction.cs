@@ -1,38 +1,38 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Pause;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
     public bool isinteractingwithbox;
-    public GameObject arrayweapon1;
-    public GameObject arrayweapon2;
-    public GameObject arrayweapon3;
-    public GameObject gatcha;
+    private bool isActived;
+    private GameObject gatcha;
 
-    private WeaponArray _weaponArray1;
-    private WeaponArray _weaponArray3;
-    private WeaponArray _weaponArray2;
+    private void Awake()
+    {
+        gatcha = GameObject.FindWithTag("gatcha");
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+        isActived = false;
         isinteractingwithbox = false; 
-        gatcha.SetActive(false);
-        _weaponArray1 = arrayweapon1.GetComponent<WeaponArray>();
-        _weaponArray2 = arrayweapon2.GetComponent<WeaponArray>();
-        _weaponArray3 = arrayweapon3.GetComponent<WeaponArray>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!isinteractingwithbox || !Input.GetKeyDown(KeyCode.F)) return;
-        _weaponArray1.RandomWepon();
-        _weaponArray2.RandomWepon();
-        _weaponArray3.RandomWepon();
-        gatcha.SetActive(true);
+        if (!isActived && isinteractingwithbox && Input.GetKeyDown(KeyCode.F))
+        {
+                    gatcha.SetActive(true);
+                    ItemPanelManager.selectionTime.Invoke();
+
+        }
+        isActived = gatcha.activeSelf;
     }
 
     private void OnTriggerEnter2D(Collider2D playercolider)

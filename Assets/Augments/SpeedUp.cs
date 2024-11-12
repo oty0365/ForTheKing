@@ -7,6 +7,6 @@ public class SpeedUp : Augments
 {
     public override void ActiveAugment()
     {
-        OneMove.spinspeed += 10f;
+        OneMove.spinspeed += 40f;
     }
 }

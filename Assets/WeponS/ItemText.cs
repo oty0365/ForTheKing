@@ -11,14 +11,12 @@ public class ItemText : MonoBehaviour
     public GameObject RandomItem;
 
     private WeaponArray randomitem;
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         randomitem = RandomItem.GetComponent<WeaponArray>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetItemText()
     {
         ItemName.text = WeaponData.Instance.GetWeaponData(randomitem.CurrentWeponIndex).weponname;
     }

@@ -11,15 +11,12 @@ public class ItemImage : MonoBehaviour
 
     public GameObject RandomItem;
 
-    private WeaponArray randomitem;
-    // Start is called before the first frame update
-    void Start()
+    public WeaponArray randomitem;
+    void Awake()
     {
         randomitem = RandomItem.GetComponent<WeaponArray>();
     }
-
-    // Update is called once per frame
-    void Update()
+    public void SetItemImage()
     {
         Itmeimage.sprite = WeaponData.Instance.GetWeaponData(randomitem.CurrentWeponIndex).weponimage;
     }

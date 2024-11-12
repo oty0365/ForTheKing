@@ -16,22 +16,14 @@ public class WeaponArray : MonoBehaviour
     [SerializeField] private GameObject WeaponSelectManagementSystem;
     private int _size;
 
-    void Start()
+    void Awake()
     {
         _core = GameObject.FindWithTag("core");
         _size = Enum.GetValues(typeof(WeaponType)).Length;
         CurrentWeponIndex = Random.Range(0, _size);
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            RandomWepon();
-        }
-    }
-
-    public void RandomWepon()
+    public void RandomWeapon()
     {
         CurrentWeponIndex = Random.Range(0, _size);
     }
