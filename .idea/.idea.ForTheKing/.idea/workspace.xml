@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c22a3450-7e3c-4862-90f3-fd4bbfd4a997" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/AugmentsUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Augments/AugmentsUi.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/Playerstatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/Playerstatus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/System/AugmentPanelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/AugmentPanelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/System/ItemPanelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/ItemPanelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/System/Pause/Gamepause.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/Pause/Gamepause.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/WeaponArray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/WeaponArray.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +36,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/System/Entity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/System/GenerateList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/System/Interaction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/System/MonsetGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/System/ObjectGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WeponS/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMPro_FontAssetCreatorWindow.cs" root0="SKIP_HIGHLIGHTING" />
@@ -139,7 +135,8 @@
       <workItem from="1727353141413" duration="1608000" />
       <workItem from="1727700211830" duration="221000" />
       <workItem from="1729603143506" duration="436000" />
-      <workItem from="1731283601238" duration="54236000" />
+      <workItem from="1731283601238" duration="54584000" />
+      <workItem from="1731506725455" duration="1624000" />
     </task>
     <servers />
   </component>
