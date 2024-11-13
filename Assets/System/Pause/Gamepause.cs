@@ -7,20 +7,32 @@ namespace System.Pause
         [NonSerialized]public bool ispaused;
         [SerializeField] private GameObject isaugmenting;
         [SerializeField] private GameObject isselecting;
-        // Start is called before the first frame update
+        public static Action pauseGame;
+        public static Action startGame;
         void Start()
         {
             ispaused = false;
+            pauseGame = GamePause;
+            startGame = GameStart;
         }
-
-        // Update is called once per frame
+        
         void Update()
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 ispaused = !ispaused;
             }
-            Time.timeScale = isselecting.activeSelf || ispaused ? 0 : 1;
+            //Time.timeScale = isselecting.activeSelf || ispaused ? 0 : 1;
+        }
+
+        public void GamePause()
+        {
+            Time.timeScale = 0;
+        }
+
+        public void GameStart()
+        {
+            Time.timeScale = 1;
         }
     }
 }

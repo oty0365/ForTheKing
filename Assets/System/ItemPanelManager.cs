@@ -1,3 +1,4 @@
+using System.Pause;
 using UnityEngine;
 
 namespace System
@@ -20,6 +21,7 @@ namespace System
 
         public void SelectionTime()
         {
+            Gamepause.pauseGame.Invoke();
             foreach (var t in weaponArrays)
             {
                 t.RandomWeapon();

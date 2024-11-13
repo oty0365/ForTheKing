@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Pause;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.SocialPlatforms;
@@ -42,6 +43,7 @@ public class WeaponArray : MonoBehaviour
             GameObject temp = Instantiate(WeaponData.Instance.GetWeaponData(CurrentWeponIndex).prefab,
                 weaponSolt1.transform.position, Quaternion.identity, weaponSolt1.transform);
             temp.transform.localRotation = _quaternion;
+            Gamepause.startGame.Invoke();
             WeaponSelectManagementSystem.SetActive(false);
             _equiptedWaepon = CurrentWeponIndex; 
             Destroy(Interaction.interactedBox);
@@ -51,6 +53,7 @@ public class WeaponArray : MonoBehaviour
             GameObject temp = Instantiate(WeaponData.Instance.GetWeaponData(CurrentWeponIndex).prefab,
                 weaponSolt1.transform.position, Quaternion.identity, weaponSolt1.transform);
             temp.transform.localRotation = _quaternion;
+            Gamepause.startGame.Invoke();
             WeaponSelectManagementSystem.SetActive(false);
             _equiptedWaepon = CurrentWeponIndex; 
             Destroy(Interaction.interactedBox);
@@ -61,6 +64,7 @@ public class WeaponArray : MonoBehaviour
     public void ExchangeWeapon()
     {
         PlayerStatus.Gold += WeaponData.Instance.GetWeaponData(CurrentWeponIndex).value;
+        Gamepause.startGame.Invoke();
         WeaponSelectManagementSystem.SetActive(false);
         Destroy(Interaction.interactedBox);
     }

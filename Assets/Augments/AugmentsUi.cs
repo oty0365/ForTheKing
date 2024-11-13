@@ -26,6 +26,7 @@ public class AugmentsUi : MonoBehaviour
         AugmentsManager.instance.augments[currentIndex].ActiveAugment();
         PlayerStatus.Exp -=PlayerStatus.MaxExp;
         PlayerStatus.setExp.Invoke();
+        Gamepause.startGame.Invoke();
         augmentSelectionModel.SetActive(false);
     }
 }

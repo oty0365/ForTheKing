@@ -6,27 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c22a3450-7e3c-4862-90f3-fd4bbfd4a997" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/AugmentImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Augments/AugmentImage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/AugmentName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Augments/AugmentName.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/Augments.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Augments/Augments.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/AugmentsDescription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Augments/AugmentsDescription.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/AugmentsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Augments/AugmentsManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Augments/AugmentsUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Augments/AugmentsUi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/DamageUp.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/DamageUp.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/DamageUp.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/DamageUp.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/HpUp.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/HpUp.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/HpUp.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/HpUp.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/SpeedUp.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/SpeedUp.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/SpeedUp.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/SpeedUp.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/Playerstatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/Playerstatus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/System/AugmentPanelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/AugmentPanelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/System/ItemPanelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/ItemPanelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/System/Pause/Gamepause.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/Pause/Gamepause.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/WeaponArray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/WeaponArray.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +139,7 @@
       <workItem from="1727353141413" duration="1608000" />
       <workItem from="1727700211830" duration="221000" />
       <workItem from="1729603143506" duration="436000" />
-      <workItem from="1731283601238" duration="49984000" />
+      <workItem from="1731283601238" duration="54236000" />
     </task>
     <servers />
   </component>

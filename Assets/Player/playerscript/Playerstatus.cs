@@ -78,6 +78,7 @@ public class PlayerStatus : MonoBehaviour
         playerhpveiw.maxValue += 15;
         MaxHp += 15;
         Hp += 15;
+        playerexpveiw
     }
     public void HpDecrease()
     {
