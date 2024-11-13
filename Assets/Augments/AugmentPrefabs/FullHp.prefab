@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6183733498603470040
+--- !u!1 &1885848148537111428
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1996305366899766831}
-  - component: {fileID: 6669383572651760112}
+  - component: {fileID: 5960090890896574878}
+  - component: {fileID: 1803548945494098754}
   m_Layer: 0
-  m_Name: SpeedUp
+  m_Name: FullHp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1996305366899766831
+--- !u!4 &5960090890896574878
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6183733498603470040}
+  m_GameObject: {fileID: 1885848148537111428}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1, y: -0.6, z: -3.6}
@@ -32,20 +32,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6669383572651760112
+--- !u!114 &1803548945494098754
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6183733498603470040}
+  m_GameObject: {fileID: 1885848148537111428}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3b0b49d0ed94db4b879bdb7a17c6385, type: 3}
+  m_Script: {fileID: 11500000, guid: 76aadb8481d52874badb28679b899e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
-  augmentName: "\uC2E0\uC18D"
-  sprite: {fileID: 21300000, guid: 8711c33a45ddb784193e8220fbfbd864, type: 3}
-  description: "\uBC14\uB78C\uC758 \uB9C8\uBC95\uC744 \uCE7C\uB4E4\uC5D0 \uBD80\uC5EC\uD574
-    \uB354\uC6B1 \uD68C\uC804\uC744 \uBE60\uB974\uAC8C \uD55C\uB2E4\n\uD68C\uC804\uC18D\uB3C4+45"
+  type: 4
+  augmentName: "\uB300\uCC9C\uC0AC\uC758 \uCD95\uBCF5"
+  sprite: {fileID: 21300000, guid: c08e5ecd7f10dd848a86bfe1188db27f, type: 3}
+  description: "\uB300\uCC9C\uC0AC\uC5D0\uAC8C \uAE30\uB3C4\uD558\uC5EC \uCCB4\uB825\uC744
+    \uBAA8\uB450 \uD68C\uBCF5\uD55C\uB2E4."

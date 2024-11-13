@@ -4,7 +4,9 @@ public enum AugmentType
 {
     SpinSpeedUp,
     DamageUp,
-    HpUp
+    HpUp,
+    RandomDice,
+    FullHp
 }
 public class Augments : MonoBehaviour
 {

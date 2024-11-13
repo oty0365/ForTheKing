@@ -6,6 +6,6 @@ public class HpUp : Augments
 {
     public override void ActiveAugment()
     {
-        PlayerStatus.Hp += 15;
+        PlayerStatus.hpUp.Invoke();
     }
 }

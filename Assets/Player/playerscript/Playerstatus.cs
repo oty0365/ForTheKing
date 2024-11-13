@@ -9,52 +9,75 @@ using UnityEngine.UI;
 public class PlayerStatus : MonoBehaviour
 {
     public static float Hp;
+    public static float MaxHp=100;
     public static float Gold;
     public static float Exp;
     public static float MaxExp=50;
     public static float AttakDmg = 0;
     [SerializeField] private Slider playerhpveiw;
     [SerializeField] private Slider playerexpveiw;
-    [SerializeField] private GameObject augmentSelect;
-    [SerializeField] private WeaponArray weaponArray;
     public float damageamount;
     public bool isinfinate;
     public int gotdamge;
     public float infinatetime;
     private bool _isActive;
+    private GameObject _augmentSelect;
+    private bool _isSelecting;
+    public static Action setExp;
+    public static Action hpUp;
+    private void Awake()
+    {
+        _augmentSelect = GameObject.FindWithTag("augmentsui");
+    }
+
     void Start()
     {
-        Hp = 100f;
+        Hp = MaxHp;
         Exp = 0f;
         Gold = 0;
         _isActive = false;
-        playerhpveiw.value = Hp;
+        _isSelecting = false;
+        playerhpveiw.value = MaxHp;
         playerexpveiw.maxValue = MaxExp;
         playerexpveiw.value = Exp;
         isinfinate = false;
         gotdamge = 0;
+        setExp = SetExp;
+        hpUp = HpUp;
     }
-    // Start is called before the first frame update
-
-    // Update is called once per frame
     private void Update()
     {
         if (gotdamge!=0 && !isinfinate)
         {
             HpDecrease();
         }
+        ExpCheck();
 
-        if (Exp >= MaxExp)
+    }
+    private void ExpCheck()
+    {
+        if (!_isSelecting&&Exp >= MaxExp)
         {
-            augmentSelect.SetActive(true);
+            _augmentSelect.SetActive(true);
             AugmentPanelManager.selectionTime.Invoke();
         }
 
+        if (_augmentSelect.activeSelf)
+        {
+            _isSelecting = true;
+        }
+        else
+        {
+            _isSelecting = false;
+        }
+        
     }
 
-    private void ExpCheck()
+    public void HpUp()
     {
-        
+        playerhpveiw.maxValue += 15;
+        MaxHp += 15;
+        Hp += 15;
     }
     public void HpDecrease()
     {
@@ -87,9 +110,9 @@ public class PlayerStatus : MonoBehaviour
         isinfinate = false;
     }
 
-    public void ExpUp()
+    public void SetExp()
     {
-        playerexpveiw.value += Exp;
+        playerexpveiw.value = Exp;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

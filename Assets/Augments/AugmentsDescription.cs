@@ -17,6 +17,6 @@ public class AugmentsDescription : MonoBehaviour
 
     public void SetAugmentDescription()
     {
-        augmentName.text = augmentsUi.augmentsManager.augments[augmentsUi.augmentsManager._currentWeaponIndex].description;
+        augmentName.text = AugmentsManager.instance.augments[augmentsUi.currentIndex].description;
     }
 }

@@ -13,6 +13,7 @@ TagManager:
   - weapon
   - gatcha
   - augments
+  - augmentsui
   layers:
   - Default
   - TransparentFX

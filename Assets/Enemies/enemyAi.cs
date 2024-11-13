@@ -93,11 +93,10 @@ namespace Enemies
         
         protected void DeathCheck()
         {
-            //Debug.Log(_playerStatus);
             if (hp <= 0)
             {
-                PlayerStatus.Exp = exp;
-                _playerStatus.ExpUp();
+                PlayerStatus.Exp += exp;
+                _playerStatus.SetExp();
                 Destroy(gameObject);
             }
         }

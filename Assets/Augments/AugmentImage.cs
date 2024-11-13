@@ -17,6 +17,6 @@ public class AugmentImage : MonoBehaviour
 
     public void SetAugmentImage()
     {
-        augmentName.sprite = augmentsUi.augmentsManager.augments[augmentsUi.augmentsManager._currentWeaponIndex].sprite;
+        augmentName.sprite = AugmentsManager.instance.augments[augmentsUi.currentIndex].sprite;
     }
 }
