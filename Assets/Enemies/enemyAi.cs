@@ -97,7 +97,7 @@ namespace Enemies
             {
                 PlayerStatus.Exp += exp;
                 _playerStatus.SetExp();
-                Destroy(gameObject);
+                ObjectPooler.instance.Return(gameObject);
             }
         }
         

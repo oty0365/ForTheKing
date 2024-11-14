@@ -4,67 +4,58 @@ using UnityEngine;
 
 namespace System
 {
-    public class ObjectPoolQueue
-    {
-        public Queue<GameObject> objectPoolQueue;
-    }
     public class ObjectPooler : MonoBehaviour
     {
         public static ObjectPooler instance;
-        public Dictionary<string,ObjectPoolQueue> objectPoolList;
-        public int currentidx;
+        public Dictionary<string, Queue<GameObject>> objectPoolList;
 
         private void Awake()
         {
             instance = this;
-            currentidx = 0;
+            instance.objectPoolList = new Dictionary<string, Queue<GameObject>>();
         }
 
         public void ReBkeObjectPooler()
         {
-            objectPoolList = new Dictionary<string, ObjectPoolQueue>();
+            objectPoolList = new Dictionary<string,Queue<GameObject>>();
         }
-
-        public void Get(string curidx, GameObject t,Vector2 position,Quaternion quaternion)
+        
+        public void Get(GameObject t,Vector2 position,Quaternion quaternion)
         {
-            if (!objectPoolList.ContainsKey(curidx))
+            if (!objectPoolList.ContainsKey(t.name))
             {
-                objectPoolList.Add(curidx,new ObjectPoolQueue());
+                objectPoolList.Add(t.name,new Queue<GameObject>());
+                
+            }
+            if (objectPoolList[t.name].Count == 0)
+            {
+                Instantiate(t, position, quaternion);
+                
             }
             else
             {
-                if (objectPoolList[curidx].objectPoolQueue.Count == 0)
-                {
-                    Instantiate(t, position, quaternion);
-                }
-                else
-                {
-                    var obj = objectPoolList[curidx].objectPoolQueue.Dequeue();
-                    obj.SetActive(true);
-                }
+                var obj = objectPoolList[t.name].Dequeue();
+                obj.SetActive(true);
             }
         }
 
-        public void Return(string curidx, GameObject t)
+        public void Return(GameObject t)
         {
-            if (!objectPoolList.ContainsKey(curidx))
-            {
-                objectPoolList.Add(curidx,new ObjectPoolQueue());
-            }
-            else
-            {
-                t.SetActive(false);
-                objectPoolList[curidx].objectPoolQueue.Enqueue(t);
-            }
-        }
-        private void Start()
-        {
+            /*if (!instance.objectPoolList.ContainsKey(t.name))
+            { 
+                instance.objectPoolList.Add(t.name,new Queue<GameObject>());
+            }*/
+            t.SetActive(false);
+            objectPoolList[t.name.Replace("(Clone)","")].Enqueue(t);
             
         }
-        
         private void Update()
         {
-        
+            foreach (var t in objectPoolList)
+            {
+                Debug.Log(t.Key);
+                Debug.Log(t.Value);
+            }
         }
     }
 }

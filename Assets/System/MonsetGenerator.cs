@@ -14,6 +14,7 @@ public class MonsterGenerator : MonoBehaviour
     {
         _camera = GetComponent<Camera>();
         StartCoroutine(SpawnFlow());
+        Debug.Log(ObjectPooler.instance.objectPoolList);
         
     }
     
@@ -27,28 +28,28 @@ public class MonsterGenerator : MonoBehaviour
             {
                 var _spwanPos = _camera.ScreenToWorldPoint(new Vector2(Random.Range(-1*Screen.width,Screen.width),-1*Screen.height));
                 var _spwaningMonster = SpwanArray[Random.Range(0, SpwanArray.Length)];
-                ObjectPooler.instance.Get(_spwaningMonster.name,_spwaningMonster,_spwanPos,Quaternion.identity);
+                ObjectPooler.instance.Get(_spwaningMonster,_spwanPos,Quaternion.identity);
                 break;
             }
             case 2:
             {
                 var _spwanPos = _camera.ScreenToWorldPoint(new Vector2(-1*Screen.width,Random.Range(-1*Screen.height,Screen.height)));
-                var _spwaningMonster = Random.Range(0, SpwanArray.Length);
-                Instantiate(SpwanArray[_spwaningMonster], _spwanPos, Quaternion.identity);
+                var _spwaningMonster = SpwanArray[Random.Range(0, SpwanArray.Length)];
+                ObjectPooler.instance.Get(_spwaningMonster,_spwanPos,Quaternion.identity);
                 break;
             }
             case 1:
             {
                 var _spwanPos = _camera.ScreenToWorldPoint(new Vector2(Screen.width,Random.Range(-1*Screen.height,Screen.height)));
-                var _spwaningMonster = Random.Range(0, SpwanArray.Length);
-                Instantiate(SpwanArray[_spwaningMonster], _spwanPos, Quaternion.identity);
+                var _spwaningMonster = SpwanArray[Random.Range(0, SpwanArray.Length)];
+                ObjectPooler.instance.Get(_spwaningMonster,_spwanPos,Quaternion.identity);
                 break;
             }
             case 0:
             {
                 var _spwanPos = _camera.ScreenToWorldPoint(new Vector2(Random.Range(-1*Screen.width,Screen.width),Screen.height));
-                var _spwaningMonster = Random.Range(0, SpwanArray.Length);
-                Instantiate(SpwanArray[_spwaningMonster], _spwanPos, Quaternion.identity);
+                var _spwaningMonster = SpwanArray[Random.Range(0, SpwanArray.Length)];
+                ObjectPooler.instance.Get(_spwaningMonster,_spwanPos,Quaternion.identity);
                 break;
             }
         }

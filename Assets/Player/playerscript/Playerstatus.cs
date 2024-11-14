@@ -54,7 +54,6 @@ public class PlayerStatus : MonoBehaviour
             HpDecrease();
         }
         ExpCheck();
-        Debug.Log(Hp);
 
     }
     private void ExpCheck()
