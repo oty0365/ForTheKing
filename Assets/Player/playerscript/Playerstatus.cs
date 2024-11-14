@@ -25,6 +25,7 @@ public class PlayerStatus : MonoBehaviour
     private bool _isSelecting;
     public static Action setExp;
     public static Action hpUp;
+    public static Action fullHp;
     private void Awake()
     {
         _augmentSelect = GameObject.FindWithTag("augmentsui");
@@ -44,6 +45,7 @@ public class PlayerStatus : MonoBehaviour
         gotdamge = 0;
         setExp = SetExp;
         hpUp = HpUp;
+        fullHp = FullHp;
     }
     private void Update()
     {
@@ -52,6 +54,7 @@ public class PlayerStatus : MonoBehaviour
             HpDecrease();
         }
         ExpCheck();
+        Debug.Log(Hp);
 
     }
     private void ExpCheck()
@@ -78,7 +81,13 @@ public class PlayerStatus : MonoBehaviour
         playerhpveiw.maxValue += 15;
         MaxHp += 15;
         Hp += 15;
-        playerexpveiw.value = Hp;
+        playerhpveiw.value = Hp;
+    }
+
+    public void FullHp()
+    {
+        Hp = MaxHp;
+        playerhpveiw.value = Hp;
     }
     public void HpDecrease()
     {

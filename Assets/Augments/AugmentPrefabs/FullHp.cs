@@ -7,6 +7,6 @@ public class FullHp : Augments
 {
     public override void ActiveAugment()
     {
-        PlayerStatus.Hp = PlayerStatus.MaxHp;
+        PlayerStatus.fullHp.Invoke();
     }
 }
