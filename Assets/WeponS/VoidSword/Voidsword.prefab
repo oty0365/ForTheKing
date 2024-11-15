@@ -147,6 +147,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canDestroy: 0
   weaponTag: 0
+  originalClips:
+  - {fileID: 7400000, guid: 3c016e1634cb3c54297fd62691bab343, type: 2}
+  - {fileID: 7400000, guid: b8a39264a0c14a04d8cc2d30c029a462, type: 2}
+  animationClips:
+  - {fileID: 7400000, guid: 1d981ead77cdf76439737952083d0aef, type: 2}
+  - {fileID: 7400000, guid: 1d981ead77cdf76439737952083d0aef, type: 2}
 --- !u!1 &8237897169500485971
 GameObject:
   m_ObjectHideFlags: 0

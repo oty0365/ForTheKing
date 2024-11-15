@@ -15,7 +15,7 @@ namespace System
             instance.objectPoolList = new Dictionary<string, Queue<GameObject>>();
         }
 
-        public void ReBkeObjectPooler()
+        public void ReBakeObjectPooler()
         {
             objectPoolList = new Dictionary<string,Queue<GameObject>>();
         }
@@ -35,27 +35,20 @@ namespace System
             else
             {
                 var obj = objectPoolList[t.name].Dequeue();
+                obj.transform.position = position;
                 obj.SetActive(true);
             }
         }
 
         public void Return(GameObject t)
         {
-            /*if (!instance.objectPoolList.ContainsKey(t.name))
+            if (!instance.objectPoolList.ContainsKey(t.name.Replace("(Clone)","")))
             { 
                 instance.objectPoolList.Add(t.name,new Queue<GameObject>());
-            }*/
+            }
             t.SetActive(false);
             objectPoolList[t.name.Replace("(Clone)","")].Enqueue(t);
             
-        }
-        private void Update()
-        {
-            foreach (var t in objectPoolList)
-            {
-                Debug.Log(t.Key);
-                Debug.Log(t.Value);
-            }
         }
     }
 }

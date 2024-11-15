@@ -149,6 +149,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canDestroy: 0
   weaponTag: 0
+  originalClips: []
+  animationClips: []
+  isLegend: 0
 --- !u!1 &2530929350717831053
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,7 +345,7 @@ TrailRenderer:
     textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
-  m_MinVertexDistance: 0.1
+  m_MinVertexDistance: 0.6
   m_MaskInteraction: 0
   m_Autodestruct: 0
   m_Emitting: 1
@@ -540,7 +543,7 @@ TrailRenderer:
     textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
-  m_MinVertexDistance: 0.1
+  m_MinVertexDistance: 0.6
   m_MaskInteraction: 0
   m_Autodestruct: 0
   m_Emitting: 1
@@ -738,7 +741,7 @@ TrailRenderer:
     textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
-  m_MinVertexDistance: 0.1
+  m_MinVertexDistance: 0.6
   m_MaskInteraction: 0
   m_Autodestruct: 0
   m_Emitting: 1
@@ -936,7 +939,7 @@ TrailRenderer:
     textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
-  m_MinVertexDistance: 0.1
+  m_MinVertexDistance: 0.6
   m_MaskInteraction: 0
   m_Autodestruct: 0
   m_Emitting: 1
