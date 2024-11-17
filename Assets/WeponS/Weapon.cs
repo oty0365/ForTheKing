@@ -45,7 +45,7 @@ namespace WeponS
         }
         
 
-        protected void DestructionCheck()
+        protected virtual void DestructionCheck()
         {
             if (canDestroy)
             {

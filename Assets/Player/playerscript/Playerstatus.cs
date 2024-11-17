@@ -26,6 +26,7 @@ public class PlayerStatus : MonoBehaviour
     public static Action setExp;
     public static Action hpUp;
     public static Action fullHp;
+    public static Action setHp;
     private void Awake()
     {
         _augmentSelect = GameObject.FindWithTag("augmentsui");
@@ -46,6 +47,7 @@ public class PlayerStatus : MonoBehaviour
         setExp = SetExp;
         hpUp = HpUp;
         fullHp = FullHp;
+        setHp = SetHp;
     }
     private void Update()
     {
@@ -122,6 +124,11 @@ public class PlayerStatus : MonoBehaviour
     public void SetExp()
     {
         playerexpveiw.value = Exp;
+    }
+
+    public void SetHp()
+    {
+        playerhpveiw.value = Hp;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

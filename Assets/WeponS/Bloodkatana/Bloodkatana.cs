@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Enemies;
 using UnityEngine;
 using WeponS;
 
@@ -14,5 +16,15 @@ public class BloodKatana : Weapon
     void Update()
     {
         DestructionCheck();
+    }
+    public override void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!other.CompareTag("enemy")) return;
+        if (other.TryGetComponent(out EnemyAi enemyAi))
+        {
+            PlayerStatus.Hp += 5;
+            PlayerStatus.setHp.Invoke();
+            enemyAi.hp -= damage;
+        }
     }
 }
