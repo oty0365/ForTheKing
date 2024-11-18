@@ -30,6 +30,7 @@ namespace Enemies
         public Behavior behavior;
         public string faceing;
         public float damage;
+        public GameObject deathParticle;
 
         protected void Start()
         {
@@ -98,6 +99,7 @@ namespace Enemies
             {
                 PlayerStatus.Exp += exp;
                 _playerStatus.SetExp();
+                ObjectPooler.instance.Get(deathParticle,gameObject.transform.position,Quaternion.identity);
                 ObjectPooler.instance.Return(gameObject);
             }
         }
@@ -113,7 +115,7 @@ namespace Enemies
         protected IEnumerator HitFlow()
         {
             var origin = sr.color;
-            for (var i = 1f; i >= 0f; i -= Time.deltaTime*2)
+            for (var i = 1f; i >= 0f; i -= Time.deltaTime*4)
             {
                 sr.color = new Color(i, i, i, 1);
                 yield return null;

@@ -208,6 +208,7 @@ MonoBehaviour:
   behavior: 0
   faceing: 
   damage: 3
+  deathParticle: {fileID: 8017044960895911076, guid: dfb763a502429d84cab3618cc953b30e, type: 3}
 --- !u!50 &6793997662134213
 Rigidbody2D:
   serializedVersion: 4
