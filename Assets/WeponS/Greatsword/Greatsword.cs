@@ -12,7 +12,7 @@ public class GreatSword : Weapon
     {
         weaponTag = WeaponData.Instance.GetWeaponData(WeaponType.GreatSword).weponnumber;
         _original = OneMove.spinspeed;
-        OneMove.spinspeed *=0.8f;
+        OneMove.spinspeed *=0.6f;
         SetUpWeapon();
     }
 

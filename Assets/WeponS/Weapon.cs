@@ -15,6 +15,7 @@ namespace WeponS
         private AnimatorOverrideController _overrideController;
         private SpriteRenderer _sr;
         public bool isLegend;
+        public int weaponLevel;
         protected void SetUpWeapon()
         {
             canDestroy = false;

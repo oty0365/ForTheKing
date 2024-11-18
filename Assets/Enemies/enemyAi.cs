@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using WeponS;
@@ -100,6 +101,24 @@ namespace Enemies
                 ObjectPooler.instance.Return(gameObject);
             }
         }
-        
+
+        protected void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.CompareTag("weapon"))
+            {
+                StartCoroutine(HitFlow());
+            }
+        }
+
+        protected IEnumerator HitFlow()
+        {
+            var origin = sr.color;
+            for (var i = 1f; i >= 0f; i -= Time.deltaTime*2)
+            {
+                sr.color = new Color(i, i, i, 1);
+                yield return null;
+            }
+            sr.color = origin;
+        }
     }
 }
