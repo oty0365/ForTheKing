@@ -23,6 +23,10 @@ public class BloodKatana : Weapon
         if (other.TryGetComponent(out EnemyAi enemyAi))
         {
             PlayerStatus.Hp += 5;
+            if (PlayerStatus.Hp >= PlayerStatus.MaxHp)
+            {
+                PlayerStatus.Hp = PlayerStatus.MaxHp;
+            }
             PlayerStatus.setHp.Invoke();
             enemyAi.hp -= damage;
         }

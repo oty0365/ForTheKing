@@ -31,10 +31,7 @@ namespace Enemies
         public string faceing;
         public float damage;
         public GameObject deathParticle;
-
-        protected void Start()
-        {
-        }
+        
 
         protected void SetUpEnemy()
         {
@@ -95,6 +92,10 @@ namespace Enemies
         
         protected void DeathCheck()
         {
+            if (!MonsterGenerator.keepGenerate)
+            {
+                hp = 0;
+            }
             if (hp <= 0)
             {
                 PlayerStatus.Exp += exp;
@@ -122,5 +123,6 @@ namespace Enemies
             }
             sr.color = origin;
         }
+        
     }
 }

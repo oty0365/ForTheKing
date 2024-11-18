@@ -88,7 +88,7 @@ public class PlayerStatus : MonoBehaviour
         Hp += 15;
         playerhpveiw.value = Hp;
     }
-
+    
     public void FullHp()
     {
         Hp = MaxHp;

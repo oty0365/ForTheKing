@@ -12,9 +12,11 @@ public class MonsterGenerator : MonoBehaviour
     private Camera _camera;
     public static Action startSpawnMonsters;
     public static Action<float> decreaseSpawningDuration;
+    public static bool keepGenerate;
 
     private void Awake()
     {
+        keepGenerate = true;
         startSpawnMonsters = StartSpawnMonsters;
         decreaseSpawningDuration = DecreaseSpawningDuration;
     }
@@ -83,7 +85,9 @@ public class MonsterGenerator : MonoBehaviour
         }
         }
 
-        StartCoroutine(SpawnFlow());
-
+        if (keepGenerate)
+        {
+            StartCoroutine(SpawnFlow());
+        }
     }
 }
