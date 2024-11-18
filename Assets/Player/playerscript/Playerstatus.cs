@@ -56,7 +56,6 @@ public class PlayerStatus : MonoBehaviour
             HpDecrease();
         }
         ExpCheck();
-
     }
     private void ExpCheck()
     {
@@ -64,6 +63,11 @@ public class PlayerStatus : MonoBehaviour
         {
             _augmentSelect.SetActive(true);
             AugmentPanelManager.selectionTime.Invoke();
+            var origin = Exp-MaxExp;
+            MaxExp *= 2;
+            playerexpveiw.maxValue = MaxExp;
+            Exp = origin;
+            SetExp();
         }
 
         if (_augmentSelect.activeSelf)
