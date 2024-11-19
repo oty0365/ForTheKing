@@ -98,7 +98,10 @@ namespace Enemies
             }
             if (hp <= 0)
             {
-                PlayerStatus.Exp += exp;
+                if (MonsterGenerator.keepGenerate)
+                {
+                    PlayerStatus.instance.Exp += exp;   
+                }
                 _playerStatus.SetExp();
                 ObjectPooler.instance.Get(deathParticle,gameObject.transform.position,Quaternion.identity);
                 ObjectPooler.instance.Return(gameObject);

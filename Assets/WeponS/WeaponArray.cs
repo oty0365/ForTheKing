@@ -39,7 +39,7 @@ public class WeaponArray : MonoBehaviour
             var wp = ex.GetComponent<Weapon>();
             var val = wp.weaponTag;
             wp.canDestroy = true;
-            PlayerStatus.Gold += WeaponData.Instance.GetWeaponData(val).value;
+            PlayerStatus.instance.Gold += WeaponData.Instance.GetWeaponData(val).value;
             GameObject temp = Instantiate(WeaponData.Instance.GetWeaponData(CurrentWeponIndex).prefab,
                 weaponSolt1.transform.position, Quaternion.identity, weaponSolt1.transform);
             temp.transform.localRotation = _quaternion;
@@ -63,7 +63,7 @@ public class WeaponArray : MonoBehaviour
 
     public void ExchangeWeapon()
     {
-        PlayerStatus.Gold += WeaponData.Instance.GetWeaponData(CurrentWeponIndex).value;
+        PlayerStatus.instance.Gold += WeaponData.Instance.GetWeaponData(CurrentWeponIndex).value;
         Gamepause.startGame.Invoke();
         WeaponSelectManagementSystem.SetActive(false);
         Destroy(Interaction.interactedBox);

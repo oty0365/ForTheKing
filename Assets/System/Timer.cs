@@ -50,9 +50,9 @@ namespace System
 
         private IEnumerator EndGameFlow()
         {
-            _tr.enabled = false;
+            //_tr.enabled = false;
             _player.transform.position = new Vector3(0, 0);
-            _tr.enabled = true;
+            //_tr.enabled = true;
             MonsterGenerator.keepGenerate = false;
             for (var i = 0f; i <= 3f; i += Time.deltaTime)
             {

@@ -43,7 +43,6 @@ public class MonsterGenerator : MonoBehaviour
     
     private IEnumerator SpawnFlow()
     {
-        if(Time.timeScale!=0){
         yield return new WaitForSeconds(spawnTime);
         var _spwanDir = Random.Range(0, 4);
         switch (_spwanDir)
@@ -82,7 +81,6 @@ public class MonsterGenerator : MonoBehaviour
                 ObjectPooler.instance.Get(_spwaningMonster, _spwanPos, Quaternion.identity);
                 break;
             }
-        }
         }
 
         if (keepGenerate)

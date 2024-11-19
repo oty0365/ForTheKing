@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Player.playerscript;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -19,7 +20,7 @@ public class InteractionKey : MonoBehaviour
     void Update()
     {
         transform.position = new Vector2(playerData.transform.position.x, playerData.transform.position.y + 1f);
-        if (_playerData.isinteractingwithbox)
+        if (_playerData.isInteractingWith!=InteractingWith.None)
         {
             Triggered();
         }

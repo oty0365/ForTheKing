@@ -3217,8 +3217,8 @@ Transform:
   m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2137979115}
   - {fileID: 279236284}
+  - {fileID: 2137979115}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &451629261
@@ -3346,6 +3346,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75699118198ea0b4d93f4e4ba530ddb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Hp: 0
+  MaxHp: 100
+  Gold: 0
+  Exp: 0
+  MaxExp: 50
+  AttakDmg: 0
   playerhpveiw: {fileID: 290093031}
   playerexpveiw: {fileID: 2036159078}
   damageamount: 5
@@ -3364,7 +3370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca3065349c202c441a3d18c35b694dec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isinteractingwithbox: 0
+  isInteractingWith: 0
 --- !u!96 &451629267
 TrailRenderer:
   serializedVersion: 3

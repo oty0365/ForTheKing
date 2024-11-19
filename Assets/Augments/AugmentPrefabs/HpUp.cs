@@ -6,6 +6,6 @@ public class HpUp : Augments
 {
     public override void ActiveAugment()
     {
-        PlayerStatus.hpUp.Invoke();
+        PlayerStatus.instance.hpUp.Invoke();
     }
 }

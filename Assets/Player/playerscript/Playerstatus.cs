@@ -8,12 +8,13 @@ using UnityEngine.UI;
 
 public class PlayerStatus : MonoBehaviour
 {
-    public static float Hp;
-    public static float MaxHp=100;
-    public static float Gold;
-    public static float Exp;
-    public static float MaxExp=50;
-    public static float AttakDmg = 0;
+    public static PlayerStatus instance;
+    public float Hp;
+    public float MaxHp=100;
+    public float Gold;
+    public float Exp;
+    public float MaxExp=50;
+    public float AttakDmg = 0;
     [SerializeField] private Slider playerhpveiw;
     [SerializeField] private Slider playerexpveiw;
     public float damageamount;
@@ -23,12 +24,13 @@ public class PlayerStatus : MonoBehaviour
     private bool _isActive;
     private GameObject _augmentSelect;
     private bool _isSelecting;
-    public static Action setExp;
-    public static Action hpUp;
-    public static Action fullHp;
-    public static Action setHp;
+    public Action setExp;
+    public Action hpUp;
+    public Action fullHp;
+    public Action setHp;
     private void Awake()
     {
+        instance = this;
         _augmentSelect = GameObject.FindWithTag("augmentsui");
     }
 

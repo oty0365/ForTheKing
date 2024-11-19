@@ -22,12 +22,13 @@ public class BloodKatana : Weapon
         if (!other.CompareTag("enemy")) return;
         if (other.TryGetComponent(out EnemyAi enemyAi))
         {
-            PlayerStatus.Hp += 5;
-            if (PlayerStatus.Hp >= PlayerStatus.MaxHp)
+            PlayerStatus.instance.Hp += 5;
+            PlayerStatus.instance.Hp += 5;
+            if (PlayerStatus.instance.Hp >= PlayerStatus.instance.MaxHp)
             {
-                PlayerStatus.Hp = PlayerStatus.MaxHp;
+                PlayerStatus.instance.Hp = PlayerStatus.instance.MaxHp;
             }
-            PlayerStatus.setHp.Invoke();
+            PlayerStatus.instance.setHp.Invoke();
             enemyAi.hp -= damage;
         }
     }

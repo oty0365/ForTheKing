@@ -22,6 +22,6 @@ public class GoldSystem : MonoBehaviour
 
     public void GoldUpdate()
     {
-        moneyGui.text = PlayerStatus.Gold.ToString(CultureInfo.InvariantCulture);
+        moneyGui.text = PlayerStatus.instance.Gold.ToString(CultureInfo.InvariantCulture);
     }
 }

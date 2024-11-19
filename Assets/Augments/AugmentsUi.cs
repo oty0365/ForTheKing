@@ -24,7 +24,7 @@ public class AugmentsUi : MonoBehaviour
     public void OnSelect()
     {
         AugmentsManager.instance.augments[currentIndex].ActiveAugment();
-        PlayerStatus.setExp.Invoke();
+        PlayerStatus.instance.setExp.Invoke();
         Gamepause.startGame.Invoke();
         augmentSelectionModel.SetActive(false);
     }

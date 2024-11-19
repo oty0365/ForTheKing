@@ -25,7 +25,7 @@ public class BanditsGambit : Weapon
         if (!other.CompareTag("enemy")) return;
         if (other.TryGetComponent(out EnemyAi enemyAi))
         {
-            PlayerStatus.Gold += 5;
+            PlayerStatus.instance.Gold += 5;
             enemyAi.hp -= damage;
         }
     }

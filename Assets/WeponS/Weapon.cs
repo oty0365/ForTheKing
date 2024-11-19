@@ -63,7 +63,7 @@ namespace WeponS
             if (!other.CompareTag("enemy")) return;
             if (other.TryGetComponent(out EnemyAi enemyAi))
             {
-                enemyAi.hp -= damage+PlayerStatus.AttakDmg;
+                enemyAi.hp -= damage+PlayerStatus.instance.AttakDmg;
             }
         }
     }

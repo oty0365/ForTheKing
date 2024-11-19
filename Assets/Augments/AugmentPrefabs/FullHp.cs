@@ -7,6 +7,6 @@ public class FullHp : Augments
 {
     public override void ActiveAugment()
     {
-        PlayerStatus.fullHp.Invoke();
+        PlayerStatus.instance.fullHp.Invoke();
     }
 }
