@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Pause;
 using Enemies;
 using UnityEditor;
@@ -28,9 +29,11 @@ public class PlayerStatus : MonoBehaviour
     public Action hpUp;
     public Action fullHp;
     public Action setHp;
+    public List<GameObject> weaponList;
     private void Awake()
     {
         instance = this;
+        weaponList = new List<GameObject>();
         _augmentSelect = GameObject.FindWithTag("augmentsui");
     }
 
@@ -53,6 +56,7 @@ public class PlayerStatus : MonoBehaviour
     }
     private void Update()
     {
+        
         if (gotdamge!=0 && !isinfinate)
         {
             HpDecrease();

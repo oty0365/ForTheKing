@@ -38,11 +38,13 @@ public class WeaponArray : MonoBehaviour
             var ex = _core.transform.GetChild(0).GetChild(0);
             var wp = ex.GetComponent<Weapon>();
             var val = wp.weaponTag;
+            PlayerStatus.instance.weaponList.Remove(wp.gameObject);
             wp.canDestroy = true;
             PlayerStatus.instance.Gold += WeaponData.Instance.GetWeaponData(val).value;
             GameObject temp = Instantiate(WeaponData.Instance.GetWeaponData(CurrentWeponIndex).prefab,
                 weaponSolt1.transform.position, Quaternion.identity, weaponSolt1.transform);
             temp.transform.localRotation = _quaternion;
+            PlayerStatus.instance.weaponList.Add(temp);
             Gamepause.startGame.Invoke();
             WeaponSelectManagementSystem.SetActive(false);
             _equiptedWaepon = CurrentWeponIndex; 

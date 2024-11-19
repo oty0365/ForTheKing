@@ -1,6 +1,7 @@
 using System.Collections;
 using Enemies;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace System
@@ -10,6 +11,7 @@ namespace System
         [SerializeField] private TextMeshProUGUI timer;
         [SerializeField] private float time;
         public static Action gameStart;
+        public GameObject door;
         private GameObject _player;
         private TrailRenderer _tr;
         void Start()
@@ -51,14 +53,11 @@ namespace System
         private IEnumerator EndGameFlow()
         {
             //_tr.enabled = false;
-            _player.transform.position = new Vector3(0, 0);
+            _player.transform.position = new Vector3(0, -3);
             //_tr.enabled = true;
             MonsterGenerator.keepGenerate = false;
-            for (var i = 0f; i <= 3f; i += Time.deltaTime)
-            {
-                _player.transform.position = new Vector3(0, 0);
-                yield return null;
-            }
+            Instantiate(door, new Vector2(0, 3), Quaternion.identity);
+            yield return null;
         }
     }
 }

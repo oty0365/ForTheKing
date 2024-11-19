@@ -1,4 +1,5 @@
 using System;
+using OtherObj;
 using UnityEngine;
 
 namespace Player.playerscript
@@ -16,7 +17,7 @@ namespace Player.playerscript
         public InteractingWith isInteractingWith;
         private bool isActived;
         private GameObject gatcha;
-
+        private Collider2D _other;
         private void Awake()
         {
             gatcha = GameObject.FindWithTag("gatcha");
@@ -32,27 +33,45 @@ namespace Player.playerscript
         // Update is called once per frame
         void Update()
         {
-            if (!isActived && isInteractingWith == InteractingWith.LootChest && Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.F))
             {
-                gatcha.SetActive(true);
-                ItemPanelManager.selectionTime.Invoke();
-
+                switch (isInteractingWith)
+                {
+                    case InteractingWith.LootChest when !isActived:
+                        gatcha.SetActive(true);
+                        ItemPanelManager.selectionTime.Invoke();
+                        break;
+                    case InteractingWith.Door:
+                        _other.gameObject.GetComponent<Door>().OpenTheDoor();
+                        break;
+                }
             }
             isActived = gatcha.activeSelf;
         }
 
-        private void OnTriggerEnter2D(Collider2D playercolider)
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            if (playercolider.gameObject.CompareTag("lootchest"))
+            _other = other;
+            if (other.gameObject.CompareTag("lootchest"))
             {
-                Interaction.interactedBox = playercolider.gameObject;
+                Interaction.interactedBox = other.gameObject;
                 isInteractingWith = InteractingWith.LootChest;
+            }
+
+            else if (other.CompareTag("door"))
+            {
+                Interaction.interactedBox = other.gameObject;
+                isInteractingWith = InteractingWith.Door;
             }
         }
 
         private void OnTriggerExit2D(Collider2D playercolider)
         {
             if (playercolider.gameObject.CompareTag("lootchest"))
+            {
+                isInteractingWith = InteractingWith.None;
+            }
+            else if (playercolider.gameObject.CompareTag("door"))
             {
                 isInteractingWith = InteractingWith.None;
             }

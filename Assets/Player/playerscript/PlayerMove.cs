@@ -127,7 +127,7 @@ namespace Player.playerscript
                 if(!dashingonwall)
                 {
                     var dashRange = Time.deltaTime * dashamount * 3.6f;
-                    rb.position += dashDir * dashRange;
+                    rb.MovePosition(rb.position+= dashDir * dashRange);
 
                 }
                 yield return null;

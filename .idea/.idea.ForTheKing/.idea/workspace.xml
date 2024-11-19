@@ -6,20 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="c22a3450-7e3c-4862-90f3-fd4bbfd4a997" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/AugmentPrefabs/DamageUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Augments/AugmentPrefabs/DamageUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/AugmentPrefabs/FullHp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Augments/AugmentPrefabs/FullHp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/AugmentPrefabs/HpUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Augments/AugmentPrefabs/HpUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Augments/AugmentsUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Augments/AugmentsUi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gold/GoldSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gold/GoldSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/InteractionKey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/InteractionKey.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OtherObj/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/DoorBoundary.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OtherObj/DoorBoundary.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/DoorBoundary.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OtherObj/DoorBoundary.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/DoorSprites/l0_sprite_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OtherObj/DoorSprites/l0_sprite_1.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerInteraction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerMove.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/Playerstatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/Playerstatus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/System/MonsetGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/MonsetGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/System/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/Timer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Banditsgambit/Banditsgambit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Banditsgambit/Banditsgambit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Bloodkatana/Bloodkatana.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Bloodkatana/Bloodkatana.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tile/StartGround/Ground.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tile/StartGround/Ground.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/WeponS/WeaponArray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/WeaponArray.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +155,7 @@
       <workItem from="1731283601238" duration="54584000" />
       <workItem from="1731506725455" duration="17640000" />
       <workItem from="1731586504715" duration="27967000" />
-      <workItem from="1731894639641" duration="13510000" />
+      <workItem from="1731894639641" duration="21685000" />
     </task>
     <servers />
   </component>
