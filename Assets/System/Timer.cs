@@ -13,19 +13,19 @@ namespace System
         public static Action gameStart;
         public GameObject door;
         private GameObject _player;
-        private TrailRenderer _tr;
         void Start()
         {
             gameStart = GameStart;
             gameStart.Invoke();
             _player = GameObject.FindWithTag("player");
-            _tr = _player.GetComponentInChildren<TrailRenderer>();
         }
 
         private void GameStart()
         {
+            time = MapManagementSystem.instance.mapData[MapManagementSystem.instance.currentMapIndex].playTime;
             StartCoroutine(GameFlow());
             MonsterGenerator.startSpawnMonsters.Invoke();
+            
         }
 
         private IEnumerator GameFlow()

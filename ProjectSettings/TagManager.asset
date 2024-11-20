@@ -18,6 +18,7 @@ TagManager:
   - conversation
   - dialog
   - selection
+  - npc
   layers:
   - Default
   - TransparentFX

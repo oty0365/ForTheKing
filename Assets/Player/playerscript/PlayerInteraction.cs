@@ -1,5 +1,6 @@
 using System;
 using OtherObj;
+using system;
 using UnityEngine;
 
 namespace Player.playerscript
@@ -44,6 +45,9 @@ namespace Player.playerscript
                     case InteractingWith.Door:
                         _other.gameObject.GetComponent<Door>().OpenTheDoor();
                         break;
+                    case InteractingWith.Npc:
+                        _other.gameObject.GetComponent<Conversation>().Talk();
+                        break;
                 }
             }
             isActived = gatcha.activeSelf;
@@ -63,15 +67,24 @@ namespace Player.playerscript
                 Interaction.interactedBox = other.gameObject;
                 isInteractingWith = InteractingWith.Door;
             }
+            else if (other.CompareTag("npc"))
+            {
+                Interaction.interactedBox = other.gameObject;
+                isInteractingWith = InteractingWith.Npc;
+            }
         }
 
-        private void OnTriggerExit2D(Collider2D playercolider)
+        private void OnTriggerExit2D(Collider2D other)
         {
-            if (playercolider.gameObject.CompareTag("lootchest"))
+            if (other.gameObject.CompareTag("lootchest"))
             {
                 isInteractingWith = InteractingWith.None;
             }
-            else if (playercolider.gameObject.CompareTag("door"))
+            else if (other.gameObject.CompareTag("door"))
+            {
+                isInteractingWith = InteractingWith.None;
+            }
+            else if (other.CompareTag("npc"))
             {
                 isInteractingWith = InteractingWith.None;
             }

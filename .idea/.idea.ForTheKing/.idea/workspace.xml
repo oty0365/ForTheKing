@@ -6,17 +6,32 @@
   <component name="ChangeListManager">
     <list default="true" id="c22a3450-7e3c-4862-90f3-fd4bbfd4a997" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OtherObj/Door.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/DoorBoundary.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OtherObj/DoorBoundary.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/DoorBoundary.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OtherObj/DoorBoundary.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/DoorSprites/l0_sprite_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OtherObj/DoorSprites/l0_sprite_1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/Door.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/Door.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/Door.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/Door.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/DoorBoundary 1.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/DoorBoundary 1.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/DoorBoundary.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/DoorBoundary.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/DoorOpening.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/DoorOpening.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/DoorSprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/DoorSprites/l0_sprite_1 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/DoorSprites/l0_sprite_1 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/DoorSprites/l0_sprite_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/DoorSprites/l0_sprite_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/DoorSprites/l1_sprite_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/DoorSprites/l1_sprite_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/DoorSprites/l2_sprite_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/DoorSprites/l2_sprite_1.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/Playerstatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/Playerstatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DialogTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DialogTest.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TheFireBase.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TheFireBase.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/System/Dialog/ConverSation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/Dialog/ConverSation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/System/Generator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/Generator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/System/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/Timer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tile/StartGround/Ground.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tile/StartGround/Ground.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/WeaponArray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/WeaponArray.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,15 +62,19 @@
     <setting file="file://$PROJECT_DIR$/Assets/Enemies/EnemyAi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemies/bat/BatAi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemies/goblin/GoblinAI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OtherObj/Door.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OtherObj/Door/Exit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/System/Entity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/System/GenerateList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/System/Interaction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/System/MapData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/System/MapManagmentSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/System/MonsetGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/System/ObjectGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/System/ObjectPooler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/System/SceneLoadManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/System/Timer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WeponS/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.10/Runtime/2D/Light2DManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMPro_FontAssetCreatorWindow.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -155,7 +174,8 @@
       <workItem from="1731283601238" duration="54584000" />
       <workItem from="1731506725455" duration="17640000" />
       <workItem from="1731586504715" duration="27967000" />
-      <workItem from="1731894639641" duration="21685000" />
+      <workItem from="1731894639641" duration="22276000" />
+      <workItem from="1732089031431" duration="11960000" />
     </task>
     <servers />
   </component>

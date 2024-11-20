@@ -33,5 +33,6 @@ namespace OtherObj
             _cc2D.enabled = false;
             _ani.SetBool("open",true);
         }
+        
     }
 }

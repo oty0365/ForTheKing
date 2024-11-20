@@ -36,7 +36,8 @@ namespace System
                 {
                     GenerateList.generateList.Add(generatePos);
                     //Debug.Log(GenerateList.generateList);
-                    Instantiate(preFabType, generatePos, Quaternion.Euler(spwanAngle));
+                    var obj = Instantiate(preFabType, generatePos, Quaternion.Euler(spwanAngle));
+                    obj.transform.parent = MapManagementSystem.instance.gameObject.transform.GetChild(0);
                 }
                 
         }

@@ -28,8 +28,10 @@ namespace system
     private Slider _timeout;
     private float _value;
     private int _respond;
+    public Action startTalk;
     private void Start()
     {
+      startTalk = Talk;
       _value = 1f;
       _conversationModal = GameObject.FindWithTag("conversation").gameObject;
       _dialogModal = _conversationModal.transform.GetChild(0).gameObject;
