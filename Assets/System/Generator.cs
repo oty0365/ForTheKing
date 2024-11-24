@@ -20,7 +20,7 @@ namespace System
                 xPos = UnityEngine.Random.Range((int)orthographicSize*-1,(int)orthographicSize);
                 yPos = UnityEngine.Random.Range((int)orthographicSize*-1,(int)orthographicSize);
                 generatePos = new Vector2(xPos, yPos);
-                Debug.Log(preFabType);
+//                Debug.Log(preFabType);
                 Check(preFabType);
                
             }

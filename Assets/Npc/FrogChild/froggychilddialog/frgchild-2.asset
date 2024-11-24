@@ -10,22 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23659185424b6a94d8cbec6b6b7e934d, type: 3}
-  m_Name: nun-2
+  m_Name: frgchild-2
   m_EditorClassIdentifier: 
-  faceImg: {fileID: 21300000, guid: 621bd902ee84f0744a194ddd2f9254b7, type: 3}
-  characterName: "\uC218\uB140"
-  diaText: "\uC7A0\uC2DC \uC26C\uB2E4\uAC00\uC138\uC694~"
-  canSelect: 0
-  selection1: 
-  selection2: 
+  faceImg: {fileID: 21300000, guid: 99f7926679c95c248b8e93deae94a034, type: 3}
+  characterName: "\uAC1C\uAD6C\uB9AC \uC6B0\uBE44 \uC18C\uB144"
+  diaText: "\uC2E0\uAE30\uD55C \uC774\uC57C\uAE30 \uB4E4\uC744\uB798?"
+  canSelect: 1
+  selection1: "\uC5B4 \uB4E4\uC5B4\uBCFC\uAC8C!"
+  selection2: "\uBBF8\uC548.. \uB2E4\uC74C\uC5D0 \uB4E4\uC744\uAC8C"
+  respond1: {fileID: 11400000, guid: b3f423be94f39f846a17bfff4b53243a, type: 2}
+  respond2: {fileID: 11400000, guid: 8ace71caed804614ab591cc46812a1ac, type: 2}
   isSelectingRight: 0
   isQuest: 0
   comingEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5225219288795777666, guid: 122ca533dcdf90b46b3758c90f26acb6, type: 3}
-        m_TargetAssemblyTypeName: Npc.Nun.NunBehavior, Assembly-CSharp
-        m_MethodName: FullHeal
+      - m_Target: {fileID: 1655646967994023829, guid: 5857ad93d6c001d4eb940e48d23e5ee1, type: 3}
+        m_TargetAssemblyTypeName: FrogChild, Assembly-CSharp
+        m_MethodName: RandomText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

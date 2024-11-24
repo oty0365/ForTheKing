@@ -15,12 +15,16 @@ namespace Player.playerscript
     }
     public class PlayerInteraction : MonoBehaviour
     {
+        public static PlayerInteraction instance;
         public InteractingWith isInteractingWith;
         private bool isActived;
+        private bool isTalking;
         private GameObject gatcha;
+        [SerializeField] private GameObject talking;
         private Collider2D _other;
         private void Awake()
         {
+            instance = this;
             gatcha = GameObject.FindWithTag("gatcha");
         }
 
@@ -28,6 +32,7 @@ namespace Player.playerscript
         void Start()
         {
             isActived = false;
+            isTalking = false;
             isInteractingWith = InteractingWith.None;
         }
 
@@ -45,11 +50,13 @@ namespace Player.playerscript
                     case InteractingWith.Door:
                         _other.gameObject.GetComponent<Door>().OpenTheDoor();
                         break;
-                    case InteractingWith.Npc:
+                    case InteractingWith.Npc when !isTalking:
                         _other.gameObject.GetComponent<Conversation>().Talk();
                         break;
                 }
             }
+
+            isTalking = talking.activeSelf;
             isActived = gatcha.activeSelf;
         }
 

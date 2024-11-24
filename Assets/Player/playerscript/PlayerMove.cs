@@ -108,7 +108,7 @@ namespace Player.playerscript
 
         private void PlayerDash()
         {
-            if (Input.GetKeyDown(KeyCode.Space) && !isdashing && candash)
+            if (Input.GetKeyDown(KeyCode.Space) && !isdashing && candash && PlayerInteraction.instance.isInteractingWith != InteractingWith.Npc)
             {
                     isdashing = true;
                     candash = false;

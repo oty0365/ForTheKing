@@ -14,12 +14,12 @@ namespace system
     public string talker;
     [Header("대화")]
     public DialogNode header;
-
+    public DialogLocation curLocation;
     private GameObject _conversationModal;
     private GameObject _dialogModal;
     private GameObject _selectionModal;
     private TextMeshProUGUI _characterName;
-    private TextMeshProUGUI _characterDialog;
+    public TextMeshProUGUI _characterDialog;
     private Image _faceImg;
     private Button _selection1;
     private Button _selection2;
@@ -28,25 +28,30 @@ namespace system
     private Slider _timeout;
     private float _value;
     private int _respond;
+    public int curindx;
+    private DialogNode _originHead;
+    [Header("말을 반복하는지에대한 여부")]
+    public bool repeat;
     public Action startTalk;
     private void Start()
     {
+      curLocation = new DialogLocation();
       startTalk = Talk;
       _value = 1f;
-      _conversationModal = GameObject.FindWithTag("conversation").gameObject;
-      _dialogModal = _conversationModal.transform.GetChild(0).gameObject;
-      _selectionModal = _conversationModal.transform.GetChild(1).gameObject;
-      _characterName = _dialogModal.transform.GetChild(3).gameObject.GetComponent<TextMeshProUGUI>();
-      _faceImg = _dialogModal.transform.GetChild(2).gameObject.GetComponent<Image>();
-      _characterName = _dialogModal.transform.GetChild(3).gameObject.GetComponent<TextMeshProUGUI>();
-      _characterDialog = _dialogModal.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>();
-      _selection1 = _selectionModal.transform.GetChild(3).gameObject.GetComponent<Button>();
-      _selection2 = _selectionModal.transform.GetChild(2).gameObject.GetComponent<Button>();
-      _timeout = _selectionModal.transform.GetChild(0).gameObject.GetComponent<Slider>();
-      _buttonText1 = _selection1.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>();
-      _buttonText2 = _selection2.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>();
+      _conversationModal = DialogManger.instance.conversation;
+      _dialogModal = DialogManger.instance.dialogModel;
+      _selectionModal = DialogManger.instance.selectionModel;
+      _characterName = DialogManger.instance.characterName;
+      _faceImg = DialogManger.instance.faceImg;
+      _characterDialog = DialogManger.instance.characterDialog;
+      _selection1 = DialogManger.instance.selection1;
+      _selection2 = DialogManger.instance.selection2;
+      _timeout = DialogManger.instance.timeout;
+      _buttonText1 = DialogManger.instance.buttonText1;
+      _buttonText2 = DialogManger.instance.buttonText2;
       _conversationModal.SetActive(false);
-      Talk();
+      _originHead = header;
+      curindx = 0;
     }
 
     public void Talk()
@@ -57,13 +62,19 @@ namespace system
       
       if (ConversationList.Dialogs.ContainsKey(talker))
       {
-        header = ConversationList.Dialogs[talker];
+        curLocation = ConversationList.Dialogs[talker];
+        curindx = curLocation.idx;
+        header = curLocation.dialogNode;
       }
       else
       {
-        ConversationList.Dialogs.Add(talker, header);
+        ConversationList.Dialogs.Add(talker, curLocation);
       }
 
+      if (repeat)
+      {
+        header = _originHead;
+      }
       StartCoroutine(TalkFlow());
 
     }
@@ -71,25 +82,37 @@ namespace system
     private IEnumerator TalkFlow()
     {
       PutText();
-      while (header.child is not null)
+      while (true)
       {
-        if (Input.GetKeyDown(KeyCode.Space)&&!header.dialogs.canSelect)
-        {
-          try
-          {
-            header = header.child[0];
-          }
-          catch
-          {
-            _conversationModal.SetActive(false);
-          }
-
-          PutText();
-        }
-        else if (Input.GetKeyDown(KeyCode.Space) && header.dialogs.canSelect && !_selectionModal.activeSelf)
+        if (Input.GetKeyDown(KeyCode.Space) && header.dialogs[curindx].canSelect && !_selectionModal.activeSelf)
         {
           _selectionModal.SetActive(true);
           StartCoroutine(SelectionFlow());
+        }
+        else if (Input.GetKeyDown(KeyCode.Space) && !header.dialogs[curindx].canSelect)
+        {
+            header.dialogs[curindx].comingEvent.Invoke();
+            if (curindx < header.dialogs.Length-1)
+            {
+              curindx++;
+              PutText();
+            }
+            else
+            {
+              _conversationModal.SetActive(false);
+              if (repeat)
+              {
+                ConversationList.Dialogs[talker] = curLocation;
+              }
+              else
+              {
+                curLocation.dialogNode = header;
+                curLocation.idx = curindx-1;
+                ConversationList.Dialogs[talker] = curLocation;
+              }
+              
+              yield break;
+            }
         }
         yield return null;
       }
@@ -101,7 +124,7 @@ namespace system
       PutSelect();
       _value = 1f;
       _selectionModal.SetActive(true);
-      if (header.dialogs.isSelectingRight)
+      if (header.dialogs[curindx].isSelectingRight)
       {
         _selection1.image.color = Color.white;
         _selection2.image.color = Color.red;
@@ -120,15 +143,17 @@ namespace system
         switch (_respond)
         {
           case 1:
-            header = header.child[0];
+            header = header.dialogs[curindx].respond1;
             _selectionModal.SetActive(false);
+            curindx = 0;
             StartCoroutine(TalkFlow());
             _selection1.onClick.RemoveListener(Respond1);
             _selection2.onClick.RemoveListener(Respond2);
             yield break;
           case 2:
-            header = header.child[1];
+            header = header.dialogs[curindx].respond2;
             _selectionModal.SetActive(false);
+            curindx = 0;
             StartCoroutine(TalkFlow());
             _selection1.onClick.RemoveListener(Respond1);
             _selection2.onClick.RemoveListener(Respond2);
@@ -138,21 +163,21 @@ namespace system
       }
       
       _selectionModal.SetActive(false);
-      header = header.child[header.dialogs.isSelectingRight ? 1 : 0];
+      //header = header.dialogs[header.dialogs.isSelectingRight ? 1 : 0];
       StartCoroutine(TalkFlow());
     }
 
-    private void PutText()
+    public void PutText()
     {
-      _faceImg.sprite = header.dialogs.faceImg;
-      _characterName.text = header.dialogs.characterName;
-      _characterDialog.text = header.dialogs.diaText;
+      _faceImg.sprite = header.dialogs[curindx].faceImg;
+      _characterName.text = header.dialogs[curindx].characterName;
+      _characterDialog.text = header.dialogs[curindx].diaText;
     }
-
+    
     private void PutSelect()
     {
-      _buttonText1.text = header.dialogs.selection1;
-      _buttonText2.text = header.dialogs.selection2;
+      _buttonText1.text = header.dialogs[curindx].selection1;
+      _buttonText2.text = header.dialogs[curindx].selection2;
     }
 
     public void Respond1()

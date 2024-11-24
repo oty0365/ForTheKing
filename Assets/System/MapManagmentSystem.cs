@@ -37,7 +37,6 @@ namespace System
                 visblity += Time.deltaTime * fadeSpeed;
                 fader.color = new Color(fader.color.r, fader.color.g, fader.color.b, visblity);
                 yield return null;
-                Debug.Log(visblity);
 
             }
 

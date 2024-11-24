@@ -20,3 +20,6 @@ MonoBehaviour:
   selection2: 
   isSelectingRight: 0
   isQuest: 0
+  comingEvent:
+    m_PersistentCalls:
+      m_Calls: []

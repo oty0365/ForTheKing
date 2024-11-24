@@ -10,17 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23659185424b6a94d8cbec6b6b7e934d, type: 3}
-  m_Name: nun-3
+  m_Name: nun-5
   m_EditorClassIdentifier: 
-  faceImg: {fileID: 21300000, guid: 85d938bce50bfa0458cae3c153773ee3, type: 3}
-  characterName: "\uC2DC\uC2A4\uD15C"
-  diaText: "\uB530\uC0AC\uB85C\uC6B4 \uD790\uB9C1\uB9C8\uBC95\uC774 \uD50C\uB808\uC774\uC5B4\uB97C
-    \uAC10\uC2FC\uB2E4."
+  faceImg: {fileID: 21300000, guid: 621bd902ee84f0744a194ddd2f9254b7, type: 3}
+  characterName: "\uC218\uB140"
+  diaText: "\uC5B8\uC81C\uB4E0 \uC624\uC138\uC694~"
   canSelect: 0
   selection1: 
   selection2: 
   isSelectingRight: 0
   isQuest: 0
-  comingEvent:
-    m_PersistentCalls:
-      m_Calls: []
