@@ -14,9 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faceImg: {fileID: 21300000, guid: 99f7926679c95c248b8e93deae94a034, type: 3}
   characterName: "\uAC1C\uAD6C\uB9AC \uC6B0\uBE44 \uC18C\uB144"
-  diaText: "\uACE0\uBE14\uB9B0\uB4E4\uC774 \uACE8\uB4DC\uB97C \uC88B\uC544\uD558\uB294
-    \uC774\uC720\uB294\n\uB204\uAD70\uAC00\uD55C\uD14C \uC774\uAC78 \uC918\uC11C
-    \uCE6D\uCC2C\uBC1B\uAE30 \uC704\uD568\uC774\uB798!"
+  diaText: 
   canSelect: 0
   selection1: 
   selection2: 

@@ -170,7 +170,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talker: "\uAC1C\uAD6C\uB9AC \uC637\uC758 \uC18C\uB144"
   header: {fileID: 11400000, guid: 10461fcf9792a284b973de4772403e70, type: 2}
-  _characterDialog: {fileID: 0}
   curindx: 0
   repeat: 1
 --- !u!58 &3905131162114757881
@@ -220,8 +219,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f49525da1e5e6e439303b07b9816c48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogs: []
   diaSlot: {fileID: 11400000, guid: b3f423be94f39f846a17bfff4b53243a, type: 2}
+  frogChild: {fileID: 1498187344934475027}
+  talks:
+  - "\uACE0\uBE14\uB9B0\uB4E4\uC774 \uAE08\uC744 \uC88B\uC544\uD558\uB294 \uC774\uC720\uB294
+    \n\uAE08\uC744 \uB204\uAD70\uAC00\uD55C\uD14C \uBC14\uCE58\uAE30 \uC704\uD574\uC11C\uB798!"
+  - "\uC2AC\uB77C\uC784\uB4E4\uC740 \uAE30\uBD84\uC5D0\uB530\uB77C \uC0C9\uC774 \uBC14\uB010\uB300!"
+  - "\uBC15\uC950\uB4E4\uC774 \uC7A0\uC744 \uC790\uC9C0 \uC54A\uB294 \uC774\uC720\uB294
+    \uC7A0\uC774 \uC548\uC640\uC11C\uB798!"
+  - "\uC2AC\uB77C\uC784\uB4E4\uC774 \uBAA8\uC774\uBA74 \uB354\uC6B1 \uD070 \uC2AC\uB77C\uC784\uC774
+    \uB41C\uB300!"
+  - "\uC6A9\uC0AC\uB4E4\uC740 \uBCF4\uD1B5 \uC544\uCE68\uC5D0 \uBE75\uC744 \uBA39\uACE0
+    \uC810\uC2EC\uC5D0\uB294 \uACE0\uAE30\uB97C \uBA39\uACE0 \uC800\uB141\uC5D0\uB294
+    \n\uC548\uBA39\uACE0 \uC7A0\uC744 \uC794\uB300!"
+  - "\uC2A4\uCF08\uB808\uD1A4\uC774 \uC57D\uD558\uB2E4\uACE0 \uCDE8\uAE09\uBC1B\uB294
+    \uC774\uC720\uB294 \n\uBF08\uAC00 \uC11C\uC11C\uD788 \uD48D\uD654\uB418\uAE30
+    \uB54C\uBB38\uC774\uB798!"
+  - "\uC6A9\uB4E4\uC911 \uAC00\uC7A5 \uC5B4\uC774\uC5C6\uB294 \uC6A9\uC740 \uB744\uC6A9\uC774\uB798!(\uB9C9
+    \uC774\uB798 \u314B\u314B)"
 --- !u!1 &5921579527966433464
 GameObject:
   m_ObjectHideFlags: 0

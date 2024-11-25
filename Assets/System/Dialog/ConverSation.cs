@@ -19,7 +19,7 @@ namespace system
     private GameObject _dialogModal;
     private GameObject _selectionModal;
     private TextMeshProUGUI _characterName;
-    public TextMeshProUGUI _characterDialog;
+    private TextMeshProUGUI _characterDialog;
     private Image _faceImg;
     private Button _selection1;
     private Button _selection2;
@@ -88,10 +88,11 @@ namespace system
         {
           _selectionModal.SetActive(true);
           StartCoroutine(SelectionFlow());
+          yield break;
         }
-        else if (Input.GetKeyDown(KeyCode.Space) && !header.dialogs[curindx].canSelect)
+        if (Input.GetKeyDown(KeyCode.Space) && !header.dialogs[curindx].canSelect)
         {
-            header.dialogs[curindx].comingEvent.Invoke();
+          header.dialogs[curindx].comingEvent.Invoke();
             if (curindx < header.dialogs.Length-1)
             {
               curindx++;
@@ -127,11 +128,11 @@ namespace system
       if (header.dialogs[curindx].isSelectingRight)
       {
         _selection1.image.color = Color.white;
-        _selection2.image.color = Color.red;
+        _selection2.image.color = Color.green;
       }
       else
       {
-        _selection1.image.color = Color.red;
+        _selection1.image.color = Color.green;
         _selection2.image.color = Color.white;
       }
       _selection1.onClick.AddListener(Respond1);
@@ -183,6 +184,7 @@ namespace system
     public void Respond1()
     {
       _respond = 1;
+      header.dialogs[curindx].comingEvent.Invoke();
     }
 
     public void Respond2()

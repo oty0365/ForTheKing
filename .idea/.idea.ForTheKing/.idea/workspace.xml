@@ -6,20 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="c22a3450-7e3c-4862-90f3-fd4bbfd4a997" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maps/TheBoneFirePlace.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Maps/TheBoneFirePlace.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Npc/Nun/nundialog/nun-1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Npc/Nun/nundialog/nun-1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Npc/Nun/nundialog/nun-2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Npc/Nun/nundialog/nun-2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Npc/Nun/nundialog/nun-3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Npc/Nun/nundialog/nun-3.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/BoneFire/New Piskel - 2024-11-20T150820.704/New Piskel - 2024-11-20T151454.402/sprite_0.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OtherObj/BoneFire/New Piskel - 2024-11-20T150820.704/New Piskel - 2024-11-20T151454.402/sprite_0.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerInteraction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Npc/FrogChild/FrogChild.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Npc/FrogChild/FrogChild.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Npc/FrogChild/FroggyChild.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Npc/FrogChild/FroggyChild.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Npc/FrogChild/froggychilddialog/frgchild-2-1-1 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Npc/FrogChild/froggychilddialog/frgchild-2-1-1 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Npc/FrogChild/froggychilddialog/frgchild-2-1-1 2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Npc/FrogChild/froggychilddialog/frgchild-2-1-1 2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Npc/FrogChild/froggychilddialog/frgchild-2-1-1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Npc/FrogChild/froggychilddialog/frgchild-2-1-1.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerMove.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/System/Dialog/ConverSation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/Dialog/ConverSation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/System/Dialog/ConverSationList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/Dialog/ConverSationList.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/System/Dialog/Dialog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/Dialog/Dialog.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/System/Dialog/DialogNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/Dialog/DialogNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/System/Generator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/Generator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/System/MapManagmentSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/MapManagmentSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +164,7 @@
       <workItem from="1731586504715" duration="27967000" />
       <workItem from="1731894639641" duration="22276000" />
       <workItem from="1732089031431" duration="33537000" />
-      <workItem from="1732232437379" duration="11402000" />
+      <workItem from="1732232437379" duration="20243000" />
     </task>
     <servers />
   </component>

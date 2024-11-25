@@ -1,15 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using system;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class FrogChild : MonoBehaviour
 {
-    public Dialog[] dialogs;
     public DialogNode diaSlot;
+    [SerializeField]private Conversation frogChild;
+    [TextArea] public string[] talks;
+    
     public void RandomText()
     {
-        var idx = Random.Range(0, dialogs.Length);
-        diaSlot.dialogs[0] = dialogs[idx];
+        frogChild.curindx = 0;
+        var idx = Random.Range(0, talks.Length);
+        diaSlot.dialogs[frogChild.curindx].diaText = talks[idx];
     }
 }

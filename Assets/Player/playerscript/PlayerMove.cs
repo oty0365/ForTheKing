@@ -21,10 +21,11 @@ namespace Player.playerscript
         [SerializeField]private float dashcooldown;
         private SpriteRenderer sr;
         private bool candash;
+        private float _horizontal;
+        private float _vertical;
         [SerializeField] private LayerMask enemy;
 
         [SerializeField] private Collider2D hitbox;
-        // Start is called before the first frame update
         void Start()
         {
             sr = gameObject.GetComponent<SpriteRenderer>();
@@ -36,58 +37,50 @@ namespace Player.playerscript
             dashingonwall = false;
             candash = true;
         }
-
-        // Update is called once per frame
         void Update()
         {
+            MovementInput();
             PlayerBasicMovement();
+            PlayerFlip();
             PlayerAnimation();
             PlayerDash();
         }
 
+        private void FixedUpdate()
+        {
+            rb.velocity = new Vector2(_horizontal, _vertical).normalized * movespeed;
+        }
+
+        private void MovementInput()
+        {
+            if (isdashing) return;
+            _horizontal=Input.GetAxisRaw("Horizontal");
+            _vertical=Input.GetAxisRaw("Vertical");
+
+        }
         private void PlayerBasicMovement()
         {
-            iswalking = false;
-            dir = Vector2.zero;
-            if (Input.GetKey(KeyCode.W)&&!isdashing)
+            if (rb.velocity == Vector2.zero)
             {
-                iswalking = true;
-                dir.y += 1;
+                iswalking = false;
             }
-
-            if (Input.GetKey(KeyCode.S)&&!isdashing)
+            else
             {
                 iswalking = true;
-                dir.y -= 1;
             }
+        }
 
-            if (Input.GetKey(KeyCode.A)&&!isdashing)
+        private void PlayerFlip()
+        {
+            if (!iswalking) return;
+            if ((int)_horizontal == 1)
             {
-                iswalking = true;
-                transform.localScale = new Vector3(-1.2f, 1.2f, 0);
-                dir.x -= 1;
-            }
-
-            if (Input.GetKey(KeyCode.D)&&!isdashing)
-            {
-                iswalking = true;
                 transform.localScale = new Vector3(1.2f, 1.2f, 0);
-                dir.x += 1;
             }
-
-            if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.S))
+            else if ((int)_horizontal == -1)
             {
-                iswalking = false;
+                transform.localScale = new Vector3(-1.2f, 1.2f, 0);
             }
-
-            if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D))
-            {
-                iswalking = false;
-            }
-            if (dir == Vector2.zero) return;
-            dir = dir.normalized;
-            rb.position += movespeed * Time.deltaTime * dir;
-            dashDir = dir;
         }
 
         private void PlayerAnimation()
@@ -120,8 +113,21 @@ namespace Player.playerscript
 
         private IEnumerator Dash()
         {
+            isdashing = true;
             sr.color=Color.black;
             hitbox.excludeLayers += enemy;
+            var xdir =0f;
+            var ydir = _vertical;
+            if (iswalking)
+            {
+                xdir = _horizontal;
+            }
+            else
+            {
+                xdir = transform.localScale.x > 0 ? 1 : -1;
+            }
+            dashDir = new Vector2(xdir, ydir);
+            dashDir = dashDir.normalized;
             for (float i = 0; i <0.5 ; i+=Time.deltaTime)
             {
                 if(!dashingonwall)
