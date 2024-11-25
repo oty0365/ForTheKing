@@ -299,8 +299,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 8
-  m_Sprite: {fileID: -1417610213, guid: 2d5d18d6ae27c314996cccbe76533204, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 1233199035, guid: c31b0a5ad11a4214bba5320c2dc21811, type: 3}
+  m_Color: {r: 0, g: 0.6401701, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -322,8 +322,7 @@ GameObject:
   - component: {fileID: 5706571851539842135}
   - component: {fileID: 6239047550049971430}
   - component: {fileID: 2056307388903404374}
-  - component: {fileID: 1338645481964246161}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -459,41 +458,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.2570536, y: 3.2}
   m_EdgeRadius: 0
---- !u!58 &1338645481964246161
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1245179881329163737}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.026653051}
-  serializedVersion: 2
-  m_Radius: 3.8346713
 --- !u!1 &5363999109862955326
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,7 +681,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0, b: 0, a: 1}
+      maxColor: {r: 0, g: 0.11986828, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -1641,7 +1605,7 @@ ParticleSystem:
         m_RotationOrder: 4
     separateAxes: 0
   RotationModule:
-    enabled: 0
+    enabled: 1
     x:
       serializedVersion: 2
       minMaxState: 0
@@ -5280,7 +5244,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 544b7f0e98439ad4d82d74d8fa3e3010, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5300,7 +5264,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 15
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -5344,7 +5308,7 @@ GameObject:
   - component: {fileID: 173823626802328451}
   - component: {fileID: 2697975143230515518}
   m_Layer: 0
-  m_Name: DoorBoundary
+  m_Name: DoorGoNext
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

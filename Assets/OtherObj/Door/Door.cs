@@ -17,7 +17,6 @@ namespace OtherObj
             _dCAngle = doorChild.transform.position.z;
             _dGCAngle = doorGrandChild.transform.position.z;
             _ani = transform.parent.GetComponent<Animator>();
-            _cc2D = GetComponent<CircleCollider2D>();
         }
 
         private void Update()
@@ -30,7 +29,6 @@ namespace OtherObj
 
         public void OpenTheDoor()
         {
-            _cc2D.enabled = false;
             _ani.SetBool("open",true);
         }
         

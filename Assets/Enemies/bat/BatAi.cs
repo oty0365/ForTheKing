@@ -18,7 +18,6 @@ public class BatAi :EnemyAi
         damage = 4f;
         hp = 15f;
         SetUpEnemy();
-        SetUpBehavior();
         CheckBehavior();
     }
 

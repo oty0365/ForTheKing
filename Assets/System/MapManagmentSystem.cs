@@ -17,6 +17,7 @@ namespace System
         private void Awake()
         {
             instance = this;
+            currentMapIndex = 1;
         }
 
         public void ChangeMap(int idx)
@@ -27,6 +28,11 @@ namespace System
         public void GoToNext()
         {
             StartCoroutine(FadeInAndOutFlow(currentMapIndex + 1));
+        }
+
+        public void GoToHome()
+        {
+            StartCoroutine(FadeInAndOutFlow(0));
         }
 
         private IEnumerator FadeInAndOutFlow(int idx)

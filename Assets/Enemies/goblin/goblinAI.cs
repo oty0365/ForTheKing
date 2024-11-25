@@ -10,7 +10,6 @@ public class GoblinAI : EnemyAi
         movespeed = 2f;
         faceing = "right";
         SetUpEnemy();
-        SetUpBehavior();
         CheckBehavior();
         
 
@@ -21,7 +20,6 @@ public class GoblinAI : EnemyAi
         damage = 2f;
         hp = 50f;
         SetUpEnemy();
-        SetUpBehavior();
         CheckBehavior();
         
     }

@@ -7,6 +7,7 @@ namespace Player.playerscript
 {
     public class PlayerMove : MonoBehaviour
     {
+        public static PlayerMove instance;
         public float movespeed;
         private bool iswalking;
         [SerializeField] private Animator playerani;
@@ -16,7 +17,7 @@ namespace Player.playerscript
         private Rigidbody2D rb;
         public float dashamount;
         private bool dashingonwall;
-        private Vector2 dir;
+        public Vector2 dir;
         private Vector2 dashDir = new Vector3(1, 0, 0);
         [SerializeField]private float dashcooldown;
         private SpriteRenderer sr;
@@ -26,6 +27,12 @@ namespace Player.playerscript
         [SerializeField] private LayerMask enemy;
 
         [SerializeField] private Collider2D hitbox;
+
+        private void Awake()
+        {
+            instance = this;
+        }
+
         void Start()
         {
             sr = gameObject.GetComponent<SpriteRenderer>();
@@ -48,7 +55,10 @@ namespace Player.playerscript
 
         private void FixedUpdate()
         {
-            rb.velocity = new Vector2(_horizontal, _vertical).normalized * movespeed;
+            if (isdashing) return;
+            dir = new Vector2(_horizontal, _vertical);
+            dir = dir.normalized;
+            rb.velocity = dir * movespeed;
         }
 
         private void MovementInput()
@@ -118,7 +128,7 @@ namespace Player.playerscript
             hitbox.excludeLayers += enemy;
             var xdir =0f;
             var ydir = _vertical;
-            if (iswalking)
+            if (dir != Vector2.zero)
             {
                 xdir = _horizontal;
             }

@@ -6,16 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="c22a3450-7e3c-4862-90f3-fd4bbfd4a997" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Npc/FrogChild/FrogChild.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Npc/FrogChild/FrogChild.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/bat/BatAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/bat/BatAi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/slime/SlimeAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/slime/SlimeAi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LootChest/Chapter1/WoodenChest/CommonChest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LootChest/Chapter1/WoodenChest/CommonChest.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Maps/TheBoneFirePlace.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Maps/TheBoneFirePlace.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Npc/FrogChild/FroggyChild.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Npc/FrogChild/FroggyChild.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Npc/FrogChild/froggychilddialog/frgchild-2-1-1 1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Npc/FrogChild/froggychilddialog/frgchild-2-1-1 1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Npc/FrogChild/froggychilddialog/frgchild-2-1-1 2.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Npc/FrogChild/froggychilddialog/frgchild-2-1-1 2.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Npc/FrogChild/froggychilddialog/frgchild-2-1-1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Npc/FrogChild/froggychilddialog/frgchild-2-1-1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Npc/Nun/Nun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Npc/Nun/Nun.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/Door/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OtherObj/Door/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/Door/DoorBoundary.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/Door/DoorBoundary.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerInteraction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerMove.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/System/Dialog/ConverSation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/Dialog/ConverSation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/System/MapManagmentSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/MapManagmentSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Sealedkatana/Sealdkatana.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Sealedkatana/Sealdkatana.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,12 +48,15 @@
     <setting file="file://$PROJECT_DIR$/Assets/Augments/AugmentsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Augments/AugmentsUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Effects/DeathParticle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enemies/BossAi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemies/EnemyAi.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleTheShadowExcuter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemies/bat/BatAi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemies/goblin/GoblinAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Npc/FrogChild/FrogChild.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Npc/Nun/NunBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/OtherObj/Door/Exit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OtherObj/Door/GoToHome.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/System/Dialog/DialogManger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/System/Entity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/System/GenerateList.cs" root0="FORCE_HIGHLIGHTING" />
@@ -164,7 +172,7 @@
       <workItem from="1731586504715" duration="27967000" />
       <workItem from="1731894639641" duration="22276000" />
       <workItem from="1732089031431" duration="33537000" />
-      <workItem from="1732232437379" duration="20243000" />
+      <workItem from="1732232437379" duration="40236000" />
     </task>
     <servers />
   </component>

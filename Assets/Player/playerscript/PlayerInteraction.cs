@@ -20,8 +20,10 @@ namespace Player.playerscript
         private bool isActived;
         private bool isTalking;
         private GameObject gatcha;
+        public Vector2 rayCastDir;
         [SerializeField] private GameObject talking;
         private Collider2D _other;
+        public LayerMask interactLayer;
         private void Awake()
         {
             instance = this;
@@ -39,6 +41,30 @@ namespace Player.playerscript
         // Update is called once per frame
         void Update()
         {
+            RaycastHit2D hit;
+            if (PlayerMove.instance.dir != Vector2.zero)
+            {
+                rayCastDir = new Vector2(PlayerMove.instance.dir.x, PlayerMove.instance.dir.y);
+            }
+            _other=Physics2D.OverlapCircle(gameObject.transform.position, 2f,interactLayer);
+            
+                switch (_other?.tag)
+                {
+                    case "lootchest":
+                        isInteractingWith = InteractingWith.LootChest;
+                        break;
+                    case "door":
+                        isInteractingWith = InteractingWith.Door;
+                        break;
+                    case "npc":
+                        isInteractingWith = InteractingWith.Npc;
+                        break;
+                    default:
+                        isInteractingWith = InteractingWith.None;
+                        break;
+                }
+            
+                
             if (Input.GetKeyDown(KeyCode.F))
             {
                 switch (isInteractingWith)
@@ -46,6 +72,7 @@ namespace Player.playerscript
                     case InteractingWith.LootChest when !isActived:
                         gatcha.SetActive(true);
                         ItemPanelManager.selectionTime.Invoke();
+                        Destroy(_other.gameObject);
                         break;
                     case InteractingWith.Door:
                         _other.gameObject.GetComponent<Door>().OpenTheDoor();
@@ -60,7 +87,7 @@ namespace Player.playerscript
             isActived = gatcha.activeSelf;
         }
 
-        private void OnTriggerEnter2D(Collider2D other)
+        /*private void OnTriggerEnter2D(Collider2D other)
         {
             _other = other;
             if (other.gameObject.CompareTag("lootchest"))
@@ -95,6 +122,6 @@ namespace Player.playerscript
             {
                 isInteractingWith = InteractingWith.None;
             }
-        }
+        }*/
     }
 }

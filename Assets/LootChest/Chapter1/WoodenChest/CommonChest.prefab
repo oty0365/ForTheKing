@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 5206437797374839931}
   - component: {fileID: 4720056176477418776}
   - component: {fileID: 7602355543161517385}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CommonChest
   m_TagString: lootchest
   m_Icon: {fileID: 0}
@@ -250,7 +250,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9189267982784069528}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:

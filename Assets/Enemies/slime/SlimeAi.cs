@@ -19,7 +19,6 @@ public class SlimeAi : EnemyAi
         damage = 1f;
         hp = 30f;
         SetUpEnemy();
-        SetUpBehavior();
         CheckBehavior();
     }
 

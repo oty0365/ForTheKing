@@ -8,16 +8,17 @@ namespace Enemies
 {
     public enum Behavior
     {
-        idle,
-        chase,
-        dash,
-        attack1,
-        attack2,
-        attack3,
-        attack4,
-        attack5,
-        ultimate,
-        death,
+        Idle,
+        Chase,
+        Dash,
+        Attack1,
+        Attack2,
+        Attack3,
+        Attack4,
+        Attack5,
+        Ultimate,
+        Death,
+        Thinking,
     }
 
     public class EnemyAi : Entity
@@ -31,21 +32,32 @@ namespace Enemies
         public string faceing;
         public float damage;
         public GameObject deathParticle;
+        protected Vector2 xdir;
+        protected Vector2 mxdir;
         
 
         protected void SetUpEnemy()
         {
+            behavior = Behavior.Idle;
             sr = gameObject.GetComponent<SpriteRenderer>();
             playerdata = GameObject.FindWithTag("player").gameObject;
             _playerStatus = playerdata.GetComponent<PlayerStatus>();
             monsterAni = GetComponent<Animator>();
-        }
-        
+            if (faceing == "right")
+            {
+                xdir = new Vector2(gameObject.transform.localScale.x,
+                    gameObject.transform.position.y);
+                mxdir = new Vector2(-gameObject.transform.localScale.x,
+                    gameObject.transform.position.y);
+            }
+            else
+            {
+                xdir = new Vector2(-gameObject.transform.localScale.x,
+                    gameObject.transform.position.y);
+                mxdir = new Vector2(gameObject.transform.localScale.x,
+                    gameObject.transform.position.y);
+            }
 
-        protected void SetUpBehavior()
-        {
-            behavior = Behavior.idle;
-            
         }
 
         protected void CheckBehavior()
@@ -65,15 +77,18 @@ namespace Enemies
 
         protected void EnemyFlip(string faceing)
         {
+            
+            var dir = gameObject.transform.position.x - playerdata.transform.position.x;
             if (this.faceing == "right")
             {
-                if (gameObject.transform.position.x - playerdata.transform.position.x > 0)
+                if (dir > 0)
                 {
-                    sr.flipX = true;
+                    gameObject.transform.localScale = xdir;
+                    
                 }
                 else
                 {
-                    sr.flipX = false;
+                    gameObject.transform.localScale = mxdir;
                 }
             }
             else if (this.faceing == "left")

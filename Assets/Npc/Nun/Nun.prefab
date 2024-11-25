@@ -93,11 +93,10 @@ GameObject:
   - component: {fileID: 3483884009931406094}
   - component: {fileID: 5519134517356795634}
   - component: {fileID: 817849851171153986}
-  - component: {fileID: 686593749719075327}
   - component: {fileID: 99724118064087947}
   - component: {fileID: 2003314562393731365}
   - component: {fileID: 5225219288795777666}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Nun
   m_TagString: npc
   m_Icon: {fileID: 0}
@@ -193,41 +192,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!58 &686593749719075327
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6967948075967377839}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.06841326, y: 0}
-  serializedVersion: 2
-  m_Radius: 2.7008405
 --- !u!61 &99724118064087947
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -287,6 +251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talker: "\uC218\uB140"
   header: {fileID: 11400000, guid: 62f709e5e5e51c247886603bbe45de63, type: 2}
+  curindx: 0
   repeat: 1
 --- !u!114 &5225219288795777666
 MonoBehaviour:
