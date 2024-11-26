@@ -7670,6 +7670,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3741970865331144944}
     m_Modifications:
+    - target: {fileID: 1129457621780796398, guid: 54b50b2b67c16364287f5429ca241126, type: 3}
+      propertyPath: bossHpView
+      value: 
+      objectReference: {fileID: 271997560}
+    - target: {fileID: 1129457621780796398, guid: 54b50b2b67c16364287f5429ca241126, type: 3}
+      propertyPath: bossNameView
+      value: 
+      objectReference: {fileID: 1165907687}
     - target: {fileID: 1879382951344676332, guid: 54b50b2b67c16364287f5429ca241126, type: 3}
       propertyPath: m_Name
       value: KyleTheShadowExcuter
