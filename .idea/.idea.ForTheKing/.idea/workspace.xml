@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22a3450-7e3c-4862-90f3-fd4bbfd4a997" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/BossAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/BossAi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleIdle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleIdle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleTheShadowExcuter.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleTheShadowExcuter.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleTheShadowExcuter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleTheShadowExcuter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/bat/BatAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/bat/BatAi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/slime/SlimeAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/slime/SlimeAi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-    </list>
+    <list default="true" id="c22a3450-7e3c-4862-90f3-fd4bbfd4a997" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -165,7 +155,7 @@
       <workItem from="1731586504715" duration="27967000" />
       <workItem from="1731894639641" duration="22276000" />
       <workItem from="1732089031431" duration="33537000" />
-      <workItem from="1732232437379" duration="48752000" />
+      <workItem from="1732232437379" duration="48787000" />
     </task>
     <servers />
   </component>
