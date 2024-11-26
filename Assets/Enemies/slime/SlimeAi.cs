@@ -26,7 +26,7 @@ public class SlimeAi : EnemyAi
     void Update()
     {
         MoveToPlayer();
-        EnemyFlip(faceing);
+        EnemyFlip();
         CheckBehavior();
         StatusCheck();
         DeathCheck();

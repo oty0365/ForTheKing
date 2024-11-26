@@ -27,7 +27,7 @@ public class GoblinAI : EnemyAi
     public void Update()
     {
         MoveToPlayer();
-        EnemyFlip(faceing);
+        EnemyFlip();
         CheckBehavior();
         StatusCheck();
         DeathCheck();

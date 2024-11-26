@@ -75,12 +75,10 @@ namespace Enemies
             transform.position = Vector3.MoveTowards(gameObject.transform.position, playerdata.transform.position, movespeed*Time.deltaTime);
         }
 
-        protected void EnemyFlip(string faceing)
+        protected void EnemyFlip()
         {
             
             var dir = gameObject.transform.position.x - playerdata.transform.position.x;
-            if (this.faceing == "right")
-            {
                 if (dir > 0)
                 {
                     gameObject.transform.localScale = xdir;
@@ -90,18 +88,7 @@ namespace Enemies
                 {
                     gameObject.transform.localScale = mxdir;
                 }
-            }
-            else if (this.faceing == "left")
-            {
-                if (gameObject.transform.position.x - playerdata.transform.position.x > 0)
-                {
-                    sr.flipX = false;
-                }
-                else
-                {
-                    sr.flipX = true;
-                }
-            }
+            
 
         }
         

@@ -30,9 +30,12 @@ public class BossAi : EnemyAi
     {
         SetUpEnemy();
         rb = GetComponent<Rigidbody2D>();
+        bossHpView.maxValue = hp;
+        bossHpView.value = hp;
+        bossNameView.text = bossName;
     }
 
-    private void Chase()
+    protected void Chase()
     {
         rb.MovePosition(transform.position = Vector3.MoveTowards(gameObject.transform.position, playerdata.transform.position, movespeed*Time.deltaTime));
     }
@@ -49,7 +52,20 @@ public class BossAi : EnemyAi
             skillStack = 0;
             return true;
         }
-
+ 
         return skillStack < 3;
+    }
+    public virtual void Think()
+    {
+        var distance = Vector2.Distance(gameObject.transform.position, playerdata.transform.position);
+        if (skills[0].skillMinRange <= distance && distance <= skills[0].skillMaxRange)
+        {
+            behavior = Behavior.Chase;
+            Chase();
+        }
+        else
+        {
+            behavior = Behavior.Idle;
+        }
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Enemies;
@@ -8,21 +9,36 @@ public class KyleTheShadowExcuter : BossAi
     private void Start()
     {
         SetUpBoss();
-        behavior = Behavior.Thinking;
+        behavior = Behavior.Idle;
     }
 
-    private void DisCaution()
+    private void Update()
+    {
+        switch (behavior)
+        {
+            case Behavior.Idle:
+                monsterAni.SetInteger("behave",0);
+                break;
+            case Behavior.Chase:
+                monsterAni.SetInteger("behave",1);
+                Chase();
+                break;
+                
+        }
+        EnemyFlip();
+    }
+
+    public override void Think()
     {
         var distance = Vector2.Distance(gameObject.transform.position, playerdata.transform.position);
-        if (skills[0].skillMinRange <= distance && distance <= skills[0].skillMaxRange)
+        if (distance >=skills[0].skillMinRange && distance <= skills[0].skillMaxRange)
         {
-            
+            behavior = Behavior.Chase;
         }
-        else if (skills[1].skillMinRange <= distance && distance <= skills[1].skillMaxRange)
+        else
         {
-            
+            behavior = Behavior.Idle;
         }
-        
     }
     
     

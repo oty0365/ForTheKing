@@ -6,21 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="c22a3450-7e3c-4862-90f3-fd4bbfd4a997" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/BossAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/BossAi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleIdle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleIdle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleTheShadowExcuter.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleTheShadowExcuter.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleTheShadowExcuter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleTheShadowExcuter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemies/bat/BatAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/bat/BatAi.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemies/slime/SlimeAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/slime/SlimeAi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LootChest/Chapter1/WoodenChest/CommonChest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LootChest/Chapter1/WoodenChest/CommonChest.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maps/TheBoneFirePlace.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Maps/TheBoneFirePlace.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Npc/FrogChild/FroggyChild.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Npc/FrogChild/FroggyChild.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Npc/Nun/Nun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Npc/Nun/Nun.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/Door/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OtherObj/Door/Door.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/Door/DoorBoundary.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/OtherObj/Door/DoorBoundary.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/playerscript/PlayerMove.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/System/MapManagmentSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/MapManagmentSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeponS/Sealedkatana/Sealdkatana.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeponS/Sealedkatana/Sealdkatana.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +165,7 @@
       <workItem from="1731586504715" duration="27967000" />
       <workItem from="1731894639641" duration="22276000" />
       <workItem from="1732089031431" duration="33537000" />
-      <workItem from="1732232437379" duration="40236000" />
+      <workItem from="1732232437379" duration="48752000" />
     </task>
     <servers />
   </component>
