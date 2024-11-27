@@ -36,6 +36,7 @@ namespace System
             {
                 var obj = objectPoolList[t.name].Dequeue();
                 obj.transform.position = position;
+                obj.transform.rotation = quaternion;
                 obj.SetActive(true);
             }
         }

@@ -32,6 +32,7 @@ namespace Enemies
         public string faceing;
         public float damage;
         public GameObject deathParticle;
+        [Header("크키 입력")] public Vector2 scale;
         protected Vector2 xdir;
         protected Vector2 mxdir;
         
@@ -45,17 +46,17 @@ namespace Enemies
             monsterAni = GetComponent<Animator>();
             if (faceing == "right")
             {
-                xdir = new Vector2(gameObject.transform.localScale.x,
-                    gameObject.transform.position.y);
-                mxdir = new Vector2(-gameObject.transform.localScale.x,
-                    gameObject.transform.position.y);
+                xdir = new Vector2(scale.x,
+                    scale.y);
+                mxdir = new Vector2(-scale.x,
+                    scale.y);
             }
             else
             {
-                xdir = new Vector2(-gameObject.transform.localScale.x,
-                    gameObject.transform.position.y);
-                mxdir = new Vector2(gameObject.transform.localScale.x,
-                    gameObject.transform.position.y);
+                xdir = new Vector2(-scale.x,
+                    scale.y);
+                mxdir = new Vector2(scale.x, 
+                    scale.y);
             }
 
         }
@@ -89,7 +90,6 @@ namespace Enemies
                     gameObject.transform.localScale = mxdir;
                 }
             
-
         }
         
         protected void DeathCheck()

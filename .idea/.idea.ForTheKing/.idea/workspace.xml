@@ -6,11 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="c22a3450-7e3c-4862-90f3-fd4bbfd4a997" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForTheKing/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/BossAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/BossAi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleChase.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleChase.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleDash.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleDash.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleIdle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleIdle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleKnifeSwip.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleKnifeSwip.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleTheShadowExcuter.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleTheShadowExcuter.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleTheShadowExcuter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleTheShadowExcuter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleTheShadowExcuter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleTheShadowExcuter.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/System/ObjectPooler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/System/ObjectPooler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +46,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Enemies/BossAi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemies/EnemyAi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/KyleTheShadowExcuter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enemies/KyleTheShadowExcuter/kylesboodydagger/BoodyDagger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemies/bat/BatAi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemies/goblin/GoblinAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Npc/FrogChild/FrogChild.cs" root0="FORCE_HIGHLIGHTING" />
@@ -163,7 +169,7 @@
       <workItem from="1731894639641" duration="22276000" />
       <workItem from="1732089031431" duration="33537000" />
       <workItem from="1732232437379" duration="48787000" />
-      <workItem from="1732623939910" duration="2500000" />
+      <workItem from="1732623939910" duration="23248000" />
     </task>
     <servers />
   </component>

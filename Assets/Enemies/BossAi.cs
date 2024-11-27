@@ -25,6 +25,7 @@ public class BossAi : EnemyAi
     protected int skillStack;
     public Skill[] skills;
     protected Rigidbody2D rb;
+    protected IEnumerator currentPattern;
 
     protected void SetUpBoss()
     {
