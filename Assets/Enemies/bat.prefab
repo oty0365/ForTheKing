@@ -211,9 +211,10 @@ MonoBehaviour:
   movespeed: 2
   exp: 10
   behavior: 0
-  faceing: 
+  faceing: left
   damage: 1
   deathParticle: {fileID: 8017044960895911076, guid: dfb763a502429d84cab3618cc953b30e, type: 3}
+  scale: {x: -1, y: 1}
 --- !u!61 &1303986346293332255
 BoxCollider2D:
   m_ObjectHideFlags: 0

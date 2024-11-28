@@ -206,9 +206,10 @@ MonoBehaviour:
   movespeed: 0.3
   exp: 30
   behavior: 0
-  faceing: 
+  faceing: left
   damage: 3
   deathParticle: {fileID: 8017044960895911076, guid: dfb763a502429d84cab3618cc953b30e, type: 3}
+  scale: {x: -1.2, y: 1.2}
 --- !u!50 &6793997662134213
 Rigidbody2D:
   serializedVersion: 4

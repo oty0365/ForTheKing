@@ -56,7 +56,10 @@ namespace System
             _player.transform.position = new Vector3(0, -3);
             //_tr.enabled = true;
             MonsterGenerator.keepGenerate = false;
-            Instantiate(door, new Vector2(0, 3), Quaternion.identity);
+            if (!MapManagementSystem.instance.mapData[MapManagementSystem.instance.currentMapIndex].hasBossBattle)
+            {
+                Instantiate(door, new Vector2(0, 3), Quaternion.identity);
+            }
             yield return null;
         }
     }

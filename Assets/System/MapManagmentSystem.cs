@@ -28,6 +28,7 @@ namespace System
         public void GoToNext()
         {
             StartCoroutine(FadeInAndOutFlow(currentMapIndex + 1));
+            SaveIdx(currentMapIndex+1);
         }
 
         public void GoToHome()
@@ -51,7 +52,6 @@ namespace System
             var newMap = Instantiate(mapData[idx].mapPrefab, new Vector2(0, 0), Quaternion.identity);
             newMap.transform.parent = gameObject.transform;
             player.transform.position = new Vector2(mapData[idx].playerPosX, mapData[idx].playerPosY);
-            currentMapIndex = idx;
             globalLight.color = mapData[currentMapIndex].globalLight;
             
             while (fader.color.a > 0)
@@ -62,6 +62,11 @@ namespace System
                 
             }
             fader.color = new Color(0, 0, 0, 0);
+        }
+
+        public void SaveIdx(int idx)
+        {
+            currentMapIndex = idx;
         }
         
     }

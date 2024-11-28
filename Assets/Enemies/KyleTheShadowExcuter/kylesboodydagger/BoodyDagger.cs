@@ -1,9 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Enemies;
 using UnityEngine;
 
-public class BoodyDagger : MonoBehaviour
+public class BoodyDagger : EnemyAi
 {
     private Rigidbody2D _rb2D;
     public float speed;

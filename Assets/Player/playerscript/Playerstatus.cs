@@ -3,8 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Pause;
 using Enemies;
+using Player.playerscript;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerStatus : MonoBehaviour
@@ -30,6 +33,9 @@ public class PlayerStatus : MonoBehaviour
     public Action fullHp;
     public Action setHp;
     public List<GameObject> weaponList;
+    private IEnumerator _hpDecrease;
+    public LayerMask enemyHitBox;
+    public Transform playerCore;
     private void Awake()
     {
         instance = this;
@@ -56,13 +62,23 @@ public class PlayerStatus : MonoBehaviour
     }
     private void Update()
     {
-        
-        if (gotdamge!=0 && !isinfinate)
-        {
-            HpDecrease();
-        }
         ExpCheck();
     }
+
+    private void FixedUpdate()
+    {
+        var cols = Physics2D.OverlapCircleAll(playerCore.transform.position, 1f);
+        foreach (var col in cols)
+        {
+            if (col.CompareTag("enemyhitbox") && !isinfinate)
+            {
+                damageamount = col.transform.parent.GetComponent<EnemyAi>().damage;
+                Hp -= damageamount;
+                HpDecrease();
+            }
+        }
+    }
+
     private void ExpCheck()
     {
         if (!_isSelecting&&Exp >= MaxExp)
@@ -104,23 +120,36 @@ public class PlayerStatus : MonoBehaviour
     {
         if (Hp > 0)
         {
-            Hp -= damageamount;
-            StopAllCoroutines();
-            StartCoroutine(ChangeHealth(Hp));
+            if (_hpDecrease is null)
+            {
+                _hpDecrease = ChangeHealth(Hp);
+                StartCoroutine(_hpDecrease);
+            }
+            else
+            {
+                StopCoroutine(_hpDecrease);
+                _hpDecrease = ChangeHealth(Hp);
+                StartCoroutine(_hpDecrease);
+            }
+
+
         }
         else
         {
-#if UNITY_EDITOR || UNITY_EDITOR_64 || UNITY_EDITOR_WIN
+/*#if UNITY_EDITOR || UNITY_EDITOR_64 || UNITY_EDITOR_WIN
             EditorApplication.isPlaying = false;
 #else
             Application.Quit();
-#endif
+#endif*/
+            SceneManager.LoadSceneAsync("TitleScene");
+            
+        
         }
     }
 
     private IEnumerator ChangeHealth(float health)
     {
-        isinfinate = true;
+        StartCoroutine(InfiniteTime());
         for (float i = 0; i < 0.2f; i += Time.deltaTime)
         {
             playerhpveiw.value = Mathf.Lerp(playerhpveiw.value, health, 2 * Time.deltaTime);
@@ -128,7 +157,6 @@ public class PlayerStatus : MonoBehaviour
         }
         playerhpveiw.value = health;
         yield return new WaitForSeconds(infinatetime);
-        isinfinate = false;
     }
 
     public void SetExp()
@@ -140,20 +168,14 @@ public class PlayerStatus : MonoBehaviour
     {
         playerhpveiw.value = Hp;
     }
-
-    private void OnTriggerEnter2D(Collider2D other)
+    
+    private IEnumerator InfiniteTime()
     {
-        if (!other.CompareTag("enemyhitbox")) return;
-        damageamount = other.transform.parent.GetComponent<EnemyAi>().damage;
-        gotdamge++;
-    }
+        isinfinate = true;
+        yield return new WaitForSeconds(1f);
+        isinfinate = false;
+        
 
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("enemyhitbox"))
-        {
-            gotdamge--;
-        }
     }
     
     

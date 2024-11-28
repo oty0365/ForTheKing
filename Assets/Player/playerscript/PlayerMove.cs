@@ -26,7 +26,7 @@ namespace Player.playerscript
         private float _vertical;
         [SerializeField] private LayerMask enemy;
 
-        [SerializeField] private Collider2D hitbox;
+        public Collider2D hitbox;
 
         private void Awake()
         {
