@@ -14,6 +14,7 @@ namespace System
         public float fadeSpeed;
         public GameObject player;
         public Light2D globalLight;
+        
         private void Awake()
         {
             instance = this;

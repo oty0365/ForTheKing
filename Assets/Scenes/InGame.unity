@@ -12123,24 +12123,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapData:
-  - mapPrefab: {fileID: 4611959094497116891, guid: a7532eaa0f8a3e64f945389725f9b432, type: 3}
-    playerPosX: 0
-    playerPosY: -2
-    globalLight: {r: 0, g: 0, b: 0, a: 1}
-    playTime: 0
-    hasBossBattle: 0
-  - mapPrefab: {fileID: 563355651949201925, guid: b51afcea9df36b74e8f21d4a14a9c930, type: 3}
-    playerPosX: 0
-    playerPosY: 0
-    globalLight: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    playTime: 120
-    hasBossBattle: 0
-  - mapPrefab: {fileID: 6569831482379450410, guid: 865ff1b3e32115f4f81695da37354f2f, type: 3}
-    playerPosX: 6.80764
-    playerPosY: 22
-    globalLight: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    playTime: 0
-    hasBossBattle: 1
+  - {fileID: 11400000, guid: 0420bd8f07e671742a91508e68b79ccf, type: 2}
+  - {fileID: 11400000, guid: 844458e46ec47ee41b58c6e038b12848, type: 2}
+  - {fileID: 11400000, guid: 4afc3d88683dc7a4086dfd10c289aa33, type: 2}
   currentMapIndex: 0
   fader: {fileID: 1314426390}
   fadeSpeed: 1

@@ -288,7 +288,7 @@ MonoBehaviour:
   movespeed: 0.2
   exp: 20
   behavior: 0
-  faceing: left
+  faceing: right
   damage: 2
   deathParticle: {fileID: 8017044960895911076, guid: dfb763a502429d84cab3618cc953b30e, type: 3}
   scale: {x: 1.4, y: 1.4}

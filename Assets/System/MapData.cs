@@ -2,8 +2,8 @@ using UnityEngine;
 
 namespace System
 {
-    [System.Serializable]
-    public class MapData
+    [CreateAssetMenu]
+    public class MapData : ScriptableObject
     {
         [Header("맵 프리팹")]
         public GameObject mapPrefab;

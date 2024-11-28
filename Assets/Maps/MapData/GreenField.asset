@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 424a32fbda3988c48836d5699bfb7ddb, type: 3}
+  m_Name: GreenField
+  m_EditorClassIdentifier: 
+  mapPrefab: {fileID: 563355651949201925, guid: b51afcea9df36b74e8f21d4a14a9c930, type: 3}
+  playerPosX: 0
+  playerPosY: 0
+  globalLight: {r: 0.8773585, g: 0.8773585, b: 0.8773585, a: 0}
+  playTime: 120
+  hasBossBattle: 0

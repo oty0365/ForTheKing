@@ -141,7 +141,7 @@ public class PlayerStatus : MonoBehaviour
 #else
             Application.Quit();
 #endif*/
-            SceneManager.LoadSceneAsync("TitleScene");
+            SceneManager.LoadScene("TitleScene");
             
         
         }

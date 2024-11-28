@@ -32,7 +32,7 @@ public class KyleTheShadowExcuter : BossAi
             bossHpView.enabled = false;
             bossNameView.enabled = false;
             Destroy(gameObject);
-            SceneManager.LoadSceneAsync("TitleScene");
+            SceneManager.LoadScene("TitleScene");
         }
         bossHpView.value = hp;
         var dir = playerdata.transform.position - gameObject.transform.position;

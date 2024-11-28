@@ -17402,7 +17402,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4015658317617082748}
   m_Layer: 0
-  m_Name: BossFight1-TheWiteMaskedMan
+  m_Name: BossFight1 TheWiteMaskedMan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
